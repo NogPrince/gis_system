@@ -1,4 +1,4 @@
-# gis_datapack
+# gis_system
 
 GISデータパックのレポジトリ。
 
