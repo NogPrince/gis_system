@@ -66,5 +66,8 @@
     "requirement16": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "function": "gis:system/world_system/tutorial"
   }
 }
