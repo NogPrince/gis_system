@@ -1,2 +1,2 @@
-function gis:system/sub_function/warp_overworld_hotel_playroom
+function gis:system/world_system/warp/warp_overworld_hotel_playroom
 advancement revoke @s only gis:system/check_location/end_gateway_minigame_lobby

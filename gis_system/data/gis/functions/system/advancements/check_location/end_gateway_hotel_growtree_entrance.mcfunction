@@ -1,2 +1,2 @@
-function gis:system/sub_function/warp_growtree
+function gis:system/world_system/warp/warp_growtree
 advancement revoke @s only gis:system/check_location/end_gateway_hotel_growtree_entrance

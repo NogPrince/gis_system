@@ -1,4 +1,4 @@
-function gis:system/sub_function/warp_nether_athletic_goal
+function gis:system/world_system/warp/warp_nether_athletic_goal
 playsound minecraft:ui.toast.challenge_complete player @s 6 35 85 1 1
 title @s title {"text":"アスレチック：中級：クリア"}
 advancement grant @s only gis:gameplay/_main/adv23
