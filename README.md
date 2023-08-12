@@ -1,5 +1,7 @@
 # gis_datapack
 
-個人的に作ったレポジトリ。
-赤シャツの作業履歴を残しているもの。
+GISデータパックのレポジトリ。
 
+
+スプレッドシート
+https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15GFc/edit?usp=sharing
