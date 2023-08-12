@@ -23,5 +23,5 @@ advancement grant @a[scores={gis_mine_score=400000..}] only gis:gameplay/_main/a
 execute as @a[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area run scoreboard players reset @s gis_mine_score
 schedule clear gis:system/world_system/minigame/minegame/mine_ore/mine_iron
 schedule clear gis:system/world_system/minigame/minegame/mine_ore/mine_gold
-scoreboard players remove #minegame gis_timer1 1
-execute as @a[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area if score #minegame gis_timer1 matches 0 run function gis:system/world_system/minigame/minegame/leave
+scoreboard players set #minegame gis_event_flag 0
+execute as @a[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area run schedule function gis:system/world_system/minigame/minegame/leave 60t
