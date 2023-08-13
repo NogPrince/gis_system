@@ -1,6 +1,1 @@
-tag @s remove minegame
-execute in minecraft:minigame run tp @s -0.50 15.00 -28.50 0 0
-
-bossbar set minecraft:minegame_time players
-team join gis_min_higi @s
-effect clear @s
+execute as @a[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area run function gis:system/world_system/minigame/minegame/leave_player

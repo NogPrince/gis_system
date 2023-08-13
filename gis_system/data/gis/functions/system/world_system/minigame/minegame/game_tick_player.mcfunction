@@ -1,4 +1,4 @@
-scoreboard players operation $SCORE$ gis_mine_score_s = @s gis_mine_score
+scoreboard players operation $SCORE$ gis_mine_score_sidebar = @s gis_mine_score
 #item_give
 loot give @s[scores={gis_mine_coal=1..}] mine 23 22 -33 mainhand
 loot give @s[scores={gis_mine_iron=1..}] mine 22 22 -33 mainhand
@@ -7,19 +7,19 @@ loot give @s[scores={gis_mine_redstone=1..}] mine 20 22 -33 mainhand
 loot give @s[scores={gis_mine_lapis=1..}] mine 19 22 -33 mainhand
 loot give @s[scores={gis_mine_diamond=1..}] mine 18 22 -33 mainhand
 #score
-scoreboard players operation @s[scores={gis_mine_stone=1..}] gis_mine_score += #minegame gis_mine_stone
-scoreboard players operation @s[scores={gis_mine_coal=1..}] gis_mine_score += #minegame gis_mine_coal
+scoreboard players operation @s[scores={gis_mine_stone=1..}] gis_mine_score += #give_score gis_mine_stone
+scoreboard players operation @s[scores={gis_mine_coal=1..}] gis_mine_score += #give_score gis_mine_coal
 execute if entity @s[scores={gis_mine_iron=1..}] run schedule function gis:system/world_system/minigame/minegame/mine_ore/mine_iron 10s append
 execute if entity @s[scores={gis_mine_gold=1..}] run schedule function gis:system/world_system/minigame/minegame/mine_ore/mine_gold 20s append
-scoreboard players operation @s[scores={gis_mine_redstone=1..}] gis_mine_score += #minegame gis_mine_redstone
-scoreboard players operation @s[scores={gis_mine_lapis=1..}] gis_mine_score += #minegame gis_mine_lapis
-scoreboard players operation @s[scores={gis_mine_diamond=1..}] gis_mine_score += #minegame gis_mine_diamond
+scoreboard players operation @s[scores={gis_mine_redstone=1..}] gis_mine_score += #give_score gis_mine_redstone
+scoreboard players operation @s[scores={gis_mine_lapis=1..}] gis_mine_score += #give_score gis_mine_lapis
+scoreboard players operation @s[scores={gis_mine_diamond=1..}] gis_mine_score += #give_score gis_mine_diamond
 #double score(ラピスラズリの効果)
-scoreboard players operation @s[scores={gis_mine_stone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #minegame gis_mine_stone
-scoreboard players operation @s[scores={gis_mine_coal=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #minegame gis_mine_coal
-scoreboard players operation @s[scores={gis_mine_redstone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #minegame gis_mine_redstone
-scoreboard players operation @s[scores={gis_mine_lapis=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #minegame gis_mine_lapis
-scoreboard players operation @s[scores={gis_mine_diamond=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #minegame gis_mine_diamond
+scoreboard players operation @s[scores={gis_mine_stone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_stone
+scoreboard players operation @s[scores={gis_mine_coal=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_coal
+scoreboard players operation @s[scores={gis_mine_redstone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_redstone
+scoreboard players operation @s[scores={gis_mine_lapis=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_lapis
+scoreboard players operation @s[scores={gis_mine_diamond=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_diamond
 
 #skill
 execute as @s[scores={gis_mine_skill=2}] if score #minegame gis_timer1 matches 1200 run effect give @s minecraft:haste 8 20

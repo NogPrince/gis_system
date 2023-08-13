@@ -4,21 +4,21 @@ scoreboard objectives add gis_player_deathcount deathCount "check if player deat
 scoreboard objectives add gis_player_health health "player health"
 scoreboard objectives add gis_player_max_health dummy "player max health"
 scoreboard objectives add gis_player_game_leave minecraft.custom:minecraft.leave_game "check if player leave game"
-scoreboard objectives add gis_instant1 dummy "temporarily use 1"
 scoreboard objectives add gis_tp dummy "TP"
 scoreboard objectives add gis_total_tp dummy "total TP"
-scoreboard objectives add gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ trigger "trigger"
 scoreboard objectives add gis_use_totem minecraft.used:minecraft.totem_of_undying "use totem"
 
-#イベントフラグ
-#minegame、ボスなどについて、イベントが実行中かどうかの状態フラグとして使用
-scoreboard objectives add gis_event_flag dummy "world event flag"
+scoreboard objectives setdisplay list gis_tp
+scoreboard objectives setdisplay sidebar gis_player_health
 
+#特殊/多用途
+scoreboard objectives add gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ trigger "trigger"
+
+scoreboard objectives add gis_instant1 dummy "temporarily use 1"
+scoreboard objectives add gis_event_flag dummy "world event flag"
 scoreboard objectives add gis_timer1 dummy "timer"
 
-
 #minegame
-#鉱石採掘検知
 scoreboard objectives add gis_mine_stone minecraft.mined:stone "mined stone"
 scoreboard objectives add gis_mine_coal minecraft.mined:coal_ore "mined coal"
 scoreboard objectives add gis_mine_iron minecraft.mined:iron_ore "mined iron"
@@ -36,9 +36,9 @@ scoreboard players set #give_score gis_mine_lapis 500
 scoreboard players set #give_score gis_mine_diamond 10000
 
 scoreboard objectives add gis_mine_skill dummy "minegame skill type"
-scoreboard objectives add gis_mine_high dummy "minegame high score"
+scoreboard objectives add gis_mine_high dummy "最高記録"
 scoreboard objectives add gis_mine_score dummy "minegame score"
-#scoreboard objectives add gis_mine_score_s dummy "minegame score?"
+scoreboard objectives add gis_mine_score_sidebar dummy "得点"
 
 #bossbar
 bossbar add minecraft:minegame_time "マインゲーム 残り時間"
@@ -47,8 +47,14 @@ bossbar set minegame_time style notched_6
 #bossbar set minegame_time color 
 
 
-team add gis_mine_score "最高記録"
+#team
+scoreboard objectives setdisplay sidebar.team.white gis_mine_score_sidebar
+scoreboard objectives setdisplay sidebar.team.yellow gis_mine_high
 
-#
-scoreboard objectives setdisplay list gis_tp
+team add gis_mine_score "得点"
+team modify gis_mine_score color white
+team add gis_mine_high "最高記録"
+team modify gis_mine_high color yellow
+
+
 #gamerule
