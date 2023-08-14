@@ -1,5 +1,5 @@
 
-#create scoreborad
+#system
 scoreboard objectives add gis_player_deathcount deathCount "check if player death"
 scoreboard objectives add gis_player_health health "player health"
 scoreboard objectives add gis_player_max_health dummy "player max health"
@@ -7,6 +7,8 @@ scoreboard objectives add gis_player_game_leave minecraft.custom:minecraft.leave
 scoreboard objectives add gis_tp dummy "TP"
 scoreboard objectives add gis_total_tp dummy "total TP"
 scoreboard objectives add gis_use_totem minecraft.used:minecraft.totem_of_undying "use totem"
+
+scoreboard objectives add gis_trigger_timer dummy "kill trigger timer"
 
 scoreboard objectives setdisplay list gis_tp
 scoreboard objectives setdisplay sidebar gis_player_health

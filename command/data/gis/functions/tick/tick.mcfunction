@@ -1,19 +1,4 @@
-#ログイン処理
-scoreboard players set @a[scores={leave_game=1..}] trigger_reset -300
-scoreboard players enable @a[scores={leave_game=1..}] gis_trigger
-execute as @a[scores={leave_game=1..},nbt={Health:20f}] run function gis:system/player_system/set_player_attlibute_sub
-execute as @a[x=143,y=17,z=-28,dx=53,dy=26,dz=53,nbt={Dimension:"minecraft:gis_nether"},scores={leave_game=1..}] at @s run tag @s add killed_nether_boss
-execute as @a[x=143,y=17,z=-28,dx=53,dy=26,dz=53,nbt={Dimension:"minecraft:gis_nether"},scores={leave_game=1..}] at @s run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
-execute as @a[scores={leave_game=1..}] at @s if predicate gis:in_puzzle_s run clear @s
-execute as @a[scores={leave_game=1..}] at @s if predicate gis:in_puzzle_s run tp @s 0 0 0
-execute as @a[tag=minegame,scores={leave_game=1..}] at @s if predicate gis:in_minegame run bossbar set minecraft:dummy players @s
-execute as @a[tag=minegame,scores={leave_game=1..}] at @s if predicate gis:in_minegame run clear @s
-execute as @a[tag=minegame,scores={leave_game=1..}] at @s if predicate gis:in_minegame run tag @s remove minegame
-execute as @a[scores={leave_game=1..}] at @s if predicate gis:in_minegame run tp @s -0.50 15.00 -26.50 0 0
-tellraw @a[scores={leave_game=1..}] {"text":"詰み防止用kill","hoverEvent":{"action":"show_text","contents":[{"text":"詰み防止用killはログイン後5秒間一度だけ有効です"}]},"clickEvent":{"action":"run_command","value":"/trigger gis_trigger set 1"}}
-scoreboard players reset @a[scores={leave_game=1..}] leave_game
-kill @a[scores={gis_trigger=1,trigger_reset=..-1}]
-tellraw @a[scores={gis_trigger=1,trigger_reset=0..}] {"text":"詰み防止用killはログイン後5秒間有効です。"}
+
 #落し物
 execute as @a[scores={deathCount=1..},tag=!gis_itemkeep] at @s run execute as @e[type=minecraft:item,distance=..10] at @s if predicate gis:in_boss_n run execute in minecraft:gis_nether run tp @s 99.47 22.69 4.54 180.03 -2.20
 execute as @a[scores={deathCount=1..},tag=!gis_itemkeep] at @s run execute as @e[type=minecraft:item,nbt={Item:{tag:{itemkeep:1}}},distance=..10] at @s unless predicate gis:in_boss_n run function gis:item/itemkeeper_chest
@@ -61,7 +46,6 @@ execute if score #spawner gis_min_iron matches 60.. run scoreboard players add #
 execute if score #spawner gis_min_iron matches 60.. run scoreboard players set #spawner gis_min_iron 0
 #minigame
 execute as @a at @s unless predicate gis:in_minigame run tag @s remove minegame
-execute if entity @a[tag=minegame] run function gis:other/minigame/minegame
 #nether_boss
 execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:other/nether/boss/boss_main 2t append
 #end_boss

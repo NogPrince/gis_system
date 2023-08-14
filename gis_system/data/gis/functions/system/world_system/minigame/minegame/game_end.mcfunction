@@ -20,9 +20,9 @@ advancement grant @a[scores={gis_mine_score=350000..}] only gis:system/minegame/
 advancement grant @a[scores={gis_mine_score=400000..}] only gis:system/minegame/prize11
 advancement grant @a[scores={gis_mine_score=400000..}] only gis:gameplay/_main/adv9
 #リセット
-execute as @a[tag=minegame] at @s run scoreboard players reset @s gis_mine_score
 schedule clear gis:system/world_system/minigame/minegame/mine_ore/mine_iron
 schedule clear gis:system/world_system/minigame/minegame/mine_ore/mine_gold
 scoreboard players set #minegame gis_event_flag 0
+#プレイヤーを戻す
 schedule function gis:system/world_system/minigame/minegame/leave 30t
 
