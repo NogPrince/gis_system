@@ -6,5 +6,7 @@ execute as @s at @s rotated ~ 0 positioned ^ ^ ^5 run summon minecraft:armor_sta
 #function分けた
 execute as @e[type=minecraft:shulker,tag=prot_c,distance=..9] at @s run function gis:system/advancements/check_item_use/prot_c_sub
 
+tellraw @a "c"
+
 xp add @s -1 levels
-advancement revoke @s only gis:system/check_item_use/prot_c
+

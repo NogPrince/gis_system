@@ -7,6 +7,7 @@ scoreboard objectives add gis_player_game_leave minecraft.custom:minecraft.leave
 scoreboard objectives add gis_tp dummy "TP"
 scoreboard objectives add gis_total_tp dummy "total TP"
 scoreboard objectives add gis_use_totem minecraft.used:minecraft.totem_of_undying "use totem"
+scoreboard objectives add gis_use_stick minecraft.used:warped_fungus_on_a_stick "use warped stick"
 
 scoreboard objectives add gis_trigger_timer dummy "kill trigger timer"
 

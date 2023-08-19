@@ -19,3 +19,6 @@ give @p minecraft:oak_sign{display: {Name: '{"text":"フロント前へ行く"}'
 give @p minecraft:oak_sign{display: {Name: '{"text":"エレベーター"}'},BlockEntityTag: {Color:"white",GlowingText:1b,Text1:'{"text":"3       R"}',Text2:'{"text":"2       6"}',Text3:'{"text":"1       5"}',Text4:'{"clickEvent":{"action":"run_command","value":"/function gis:system/sign_click/elevator/click_point"},"text":"B       4"}'}} 1
 
 #setblock 244 20 40 minecraft:oak_wall_sign[facing=south,waterlogged=false]{Color:"white",GlowingText:1b,Text1:'{"text":"3       R"}',Text2:'{"text":"2       6"}',Text3:'{"text":"1       5"}',Text4:'{"clickEvent":{"action":"run_command","value":"/function gis:system/sign_click/elevator/click_point"},"text":"B       4"}'}
+
+
+
