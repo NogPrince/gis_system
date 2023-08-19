@@ -1,5 +1,5 @@
 {
-  "parent": "gis:other/root",
+  "parent": "gis:system/check_item_use/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:item_used_on_block",
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "gis:item/prot_d"
+    "function": "gis:system/advancements/check_item_use/prot_d"
   }
 }

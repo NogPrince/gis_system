@@ -16,7 +16,6 @@ effect give @a[nbt={Inventory:[{Slot:100b,tag:{ID:118}}]}] minecraft:levitation 
 effect give @a[nbt={Inventory:[{Slot:103b,tag:{ID:126}}]}] minecraft:night_vision 1 0 true
 execute as @a[nbt={SelectedItem:{id:"minecraft:bow",tag:{ID:2070}}},scores={gis_arrow_shot=1..}] at @s run function gis:item/slowbow
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{ID:141}}},scores={gis_stick_use=1..},level=3..] at @s run function gis:item/flarerod
-execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{ID:159}}},scores={gis_stick_use=1..},level=1..] at @s run function gis:item/prot_c
 
 
 
@@ -44,8 +43,6 @@ execute if score #spawner gis_min_coal matches 60.. run scoreboard players add #
 execute if score #spawner gis_min_coal matches 60.. run scoreboard players set #spawner gis_min_coal 0
 execute if score #spawner gis_min_iron matches 60.. run scoreboard players add #spawner gis_min_gold 1
 execute if score #spawner gis_min_iron matches 60.. run scoreboard players set #spawner gis_min_iron 0
-#minigame
-execute as @a at @s unless predicate gis:in_minigame run tag @s remove minegame
 #nether_boss
 execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:other/nether/boss/boss_main 2t append
 #end_boss

@@ -14,6 +14,9 @@ execute as @s[x=143,y=17,z=-28,dx=53,dy=26,dz=53,nbt={Dimension:"minecraft:gis_n
 execute as @s at @s if predicate gis:system/position_check/in_nether_puzzl_passive run clear @s
 execute as @s at @s if predicate gis:system/position_check/in_nether_puzzl_passive run tp @s 0 0 0
 #マインゲーム
+execute as @s[tag=minegame] at @s unless predicate gis:system/position_check/in_minigame_dimension run tellraw @s {"text":"ミニゲームエリアを出ているため、マインゲームへのエントリーを取り消しました。","color": "red"}
+execute as @s[tag=minegame] at @s unless predicate gis:system/position_check/in_minigame_dimension run tag @s remove minegame
+
 execute as @s[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area if score #minegame gis_event_flag matches 0 run tellraw @s {"text":"ゲーム中にログアウトしたため、ゲームを途中終了しました。","color": "red"}
 execute as @s[tag=minegame] at @s if predicate gis:system/position_check/in_minegame_area if score #minegame gis_event_flag matches 0 run function gis:system/world_system/minigame/minegame/leave_player
 
