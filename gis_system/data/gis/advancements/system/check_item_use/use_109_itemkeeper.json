@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "gis:item/itemkeeper"
+    "function": "gis:system/advancements/check_item_use/use_109_itemkeeper"
   }
 }

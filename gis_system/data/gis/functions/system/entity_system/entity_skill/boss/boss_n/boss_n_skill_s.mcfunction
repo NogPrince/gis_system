@@ -12,7 +12,7 @@ execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava if block 
 execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava if block 174 22 -6 minecraft:lava run fill 175 22 -7 164 22 4 minecraft:lava replace minecraft:air
 execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava if block 173 22 -5 minecraft:lava run fill 174 22 -6 165 22 3 minecraft:lava replace minecraft:air
 execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava if block 172 22 -4 minecraft:lava run fill 173 22 -5 166 22 2 minecraft:lava replace minecraft:air
-execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava unless block 172 22 -4 minecraft:lava run execute as @a at @s if predicate gis:in_boss_n run tellraw @s {"text":"床に溶岩が出現！","color":"#FF6F00"}
+execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava unless block 172 22 -4 minecraft:lava run execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s {"text":"床に溶岩が出現！","color":"#FF6F00"}
 execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava run fill 167 22 1 172 22 -4 minecraft:lava replace minecraft:air
 execute in minecraft:gis_nether unless block 186 22 -18 minecraft:lava run schedule function gis:mob/mobskill/boss_n/boss_n_skill_s 0.5s append
 

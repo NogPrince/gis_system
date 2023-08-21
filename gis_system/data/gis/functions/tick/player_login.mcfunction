@@ -1,7 +1,7 @@
 
 #ログイン時
-# @a[scores={leave_game=1..}]が実行主
-scoreboard players reset @s leave_game
+# @a[scores={gis_player_game_leave=1..}]が実行主
+scoreboard players reset @s gis_player_game_leave
 #詰み防止kill
 scoreboard players set @s gis_trigger_timer -300
 scoreboard players enable @s gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

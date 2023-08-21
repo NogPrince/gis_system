@@ -14,7 +14,7 @@
         {
           "score": {
             "name": "@s",
-            "objective": "instant_sub"
+            "objective": "gis_instant2"
           }
         }
       ]

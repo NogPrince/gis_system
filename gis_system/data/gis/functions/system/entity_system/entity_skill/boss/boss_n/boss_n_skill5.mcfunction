@@ -4,7 +4,7 @@ schedule function gis:mob/mobskill/boss_n/boss_n_skill5_sub 1t append
 execute as 0000006e-0000-0000-0000-000200000003 at @s run tp @s 170.0 22.00 -1.0
 schedule function gis:mob/mobskill/boss_n/boss_n_skill_tp_sub 1t
 function gis:mob/mobskill/boss_n/sub/fire_fall
-execute as @a at @s if predicate gis:in_boss_n run tellraw @s {"text":"拘束せよ…炎獄"}
+execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s {"text":"拘束せよ…炎獄"}
 execute as 0000006e-0000-0000-0000-000200000000 at @s[tag=!gis_nb_h] run data modify entity @s PortalCooldown set value 400
 execute as 0000006e-0000-0000-0000-000200000000 at @s[tag=gis_nb_h] run data modify entity @s PortalCooldown set value 300
 function gis:other/rand

@@ -8,6 +8,8 @@ scoreboard objectives add gis_tp dummy "TP"
 scoreboard objectives add gis_total_tp dummy "total TP"
 scoreboard objectives add gis_use_totem minecraft.used:minecraft.totem_of_undying "use totem"
 scoreboard objectives add gis_use_stick minecraft.used:warped_fungus_on_a_stick "use warped stick"
+scoreboard objectives add gis_arrow_shot minecraft.used:bow "use bow"
+
 
 scoreboard objectives add gis_trigger_timer dummy "kill trigger timer"
 
@@ -18,6 +20,7 @@ scoreboard objectives setdisplay sidebar gis_player_health
 scoreboard objectives add gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ trigger "trigger"
 
 scoreboard objectives add gis_instant1 dummy "temporarily use 1"
+scoreboard objectives add gis_instant2 dummy "temporarily use 2"
 scoreboard objectives add gis_event_flag dummy "world event flag"
 scoreboard objectives add gis_timer1 dummy "timer"
 

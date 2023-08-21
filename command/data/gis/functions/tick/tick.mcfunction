@@ -1,22 +1,10 @@
 
-#落し物
-execute as @a[scores={deathCount=1..},tag=!gis_itemkeep] at @s run execute as @e[type=minecraft:item,distance=..10] at @s if predicate gis:in_boss_n run execute in minecraft:gis_nether run tp @s 99.47 22.69 4.54 180.03 -2.20
-execute as @a[scores={deathCount=1..},tag=!gis_itemkeep] at @s run execute as @e[type=minecraft:item,nbt={Item:{tag:{itemkeep:1}}},distance=..10] at @s unless predicate gis:in_boss_n run function gis:item/itemkeeper_chest
-tag @a[scores={deathCount=1..},tag=!gis_itemkeep] add gis_itemkeep
 #ステータス
 execute as @a[scores={deathCount=1..},nbt={Health:20f}] at @s run function gis:other/bossber_set
 execute as @a[scores={deathCount=1..},advancements={gis:other/tutorial=false}] in minecraft:tutorial run tp @s 0.5 127.00 0.5 270 0
-execute as @a at @s unless predicate gis:athletic unless predicate gis:in_minigame unless predicate gis:in_puzzle_d run function gis:growtree/effect
+
 execute as @a[scores={deathCount=1..},nbt={Health:20f}] run function gis:system/player_system/set_player_attlibute
 execute as @a at @s if predicate gis:in_puzzle_d run effect give @s minecraft:saturation 20 1 true
-execute as @a at @s if predicate gis:athletic run effect give @s minecraft:saturation 20 1 true
-execute as @a at @s if predicate gis:athletic run effect give @s minecraft:resistance 1 5 true
-#item
-effect give @a[nbt={Inventory:[{Slot:100b,tag:{ID:118}}]}] minecraft:levitation 1 255
-effect give @a[nbt={Inventory:[{Slot:103b,tag:{ID:126}}]}] minecraft:night_vision 1 0 true
-execute as @a[nbt={SelectedItem:{id:"minecraft:bow",tag:{ID:2070}}},scores={gis_arrow_shot=1..}] at @s run function gis:item/slowbow
-execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{ID:141}}},scores={gis_stick_use=1..},level=3..] at @s run function gis:item/flarerod
-
 
 
 #mob
@@ -28,9 +16,6 @@ execute if score #spawner gis_spawner matches 260.. if score #spawner instant_su
 execute if score #spawner gis_spawner matches 415.. if score #spawner instant_sub matches 3 run function gis:mob/villager/spawner80
 #other
 
-
-execute in minecraft:gis_nether run tp @a[nbt={Dimension:"minecraft:the_nether"}] -30.70 19.00 0.65 270 0
-execute as @a[nbt={Dimension:"minecraft:gis_nether",PortalCooldown:0}] at @s if block ~ ~ ~ minecraft:nether_portal in minecraft:overworld run tp @s 77.50 58.00 -16.50 0 0
 execute as 00000098-0000-0000-0000-000000000000 at @s[nbt={PortalCooldown:8}] run function gis:other/nether/puzzle/puzzle_s_flip
 execute if entity 0000006e-0000-0001-0000-000000000000 run function gis:other/end/end_gate_l
 execute if entity 0000006e-0000-0001-0000-000000000001 run function gis:other/end/end_gate_r
@@ -48,6 +33,5 @@ execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule functi
 #end_boss
 execute if entity @a[nbt={Dimension:"minecraft:end_boss"}] run schedule function gis:other/end/endboss/boss_main 2t append
 #scorereset
-scoreboard players reset @a[scores={gis_arrow_shot=1..}] gis_arrow_shot
-scoreboard players reset @a[scores={gis_stick_use=1..}] gis_stick_use
+
 execute as @a[scores={boss_reset=12000..12003}] run tag @s remove killed_nether_boss

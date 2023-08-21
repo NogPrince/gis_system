@@ -4,8 +4,8 @@ execute if score #nether_boss instant matches -100 run tellraw @s {"text":"不�
 execute if score #nether_boss instant matches 0 run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
 execute if score #nether_boss instant matches 0 run tellraw @s {"text":"ボスが復活していません。\nボスを復活させるにはBOSS再戦チケットを\nゲート横の篝火に使用してください。"}
 execute if score #nether_boss instant matches 1 run tag @a remove killed_nether_boss
-execute if score #nether_boss instant matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:in_boss_n run tp @s ~ 17 ~
-execute if score #nether_boss instant matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:in_boss_n run kill @s
+execute if score #nether_boss instant matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run tp @s ~ 17 ~
+execute if score #nether_boss instant matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run kill @s
 execute if score #nether_boss instant matches 1 run scoreboard players set #nether_boss boss_reset 0
 execute if score #nether_boss instant matches 1 run scoreboard players set #nether_boss gis_min_coal 0
 execute if score #nether_boss instant matches 1 run scoreboard players set #nether_boss gis_min_iron 0
