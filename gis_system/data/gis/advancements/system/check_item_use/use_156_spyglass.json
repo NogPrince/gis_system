@@ -1,5 +1,5 @@
 {
-  "parent": "gis:other/root",
+  "parent": "gis:system/check_item_use/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "gis:item/spyglass"
+    "function": "gis:system/advancements/check_item_use/use_156_spyglass"
   }
 }

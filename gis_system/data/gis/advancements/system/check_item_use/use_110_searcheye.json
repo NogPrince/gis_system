@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "gis:item/searcheye"
+    "function": "gis:system/advancements/check_item_use/use_110_searcheye"
   }
 }

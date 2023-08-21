@@ -5,4 +5,4 @@ execute if score @s gis_instant1 matches 0 run data modify entity @e[tag=prot_wo
 execute if score @s gis_instant1 matches 1 run data modify entity @e[tag=prot_wolf,limit=1,sort=nearest] AngerTime set value 3600
 tag @e[tag=prot_wolf,limit=1,sort=nearest] remove prot_wolf
 scoreboard players reset @s gis_instant1
-advancement revoke @p only gis:system/check_item_use/prot_a
+advancement revoke @p only gis:system/check_item_use/use_157_prot_a

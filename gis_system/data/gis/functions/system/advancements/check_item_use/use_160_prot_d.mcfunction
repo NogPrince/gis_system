@@ -13,4 +13,4 @@ item modify entity @s armor.feet gis:item/prot_d4
 playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 0
 playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 0
 tellraw @s {"text":"試作型強化装甲-δ-起動","color":"green"}
-advancement revoke @s only gis:system/check_item_use/prot_d
+advancement revoke @s only gis:system/check_item_use/use_160_prot_d
