@@ -1,0 +1,22 @@
+
+{
+  "replace": false,
+  "values": [
+      "#minecraft:all_signs",
+      "#minecraft:flowers",
+      "#minecraft:banners",
+      "#minecraft:buttons",
+      "#minecraft:candles",
+      "#minecraft:fire",
+      "#minecraft:rails",
+      "minecraft:torch",
+      "minecraft:wall_torch",
+      "minecraft:redstone_torch",
+      "minecraft:redstone_wall_torch",
+      "minecraft:soul_torch",
+      "minecraft:soul_wall_torch",
+      "air",
+      "cave_air",
+      "void_air"      
+  ]
+}

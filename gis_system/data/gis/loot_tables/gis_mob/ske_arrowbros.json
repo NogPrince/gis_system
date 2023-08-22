@@ -10,6 +10,50 @@
         }
       ]
     },
+    {"rolls": 1,
+       "entries": [
+          {
+            "type": "minecraft:item",
+              "name": "minecraft:bow",
+              "functions": [
+                {
+                  "function": "minecraft:set_name",
+                  "name": {
+                    "text": "アローブロスの弓",
+                    "color": "blue"
+                  }
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "lore": [
+                    {
+                      "text": "撃った矢がゆっくり飛んでいく弓"
+                    },
+                    {
+                      "text": "使い道はあまりない"
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{ID: 2070}"
+                },
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:power": 3
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+    },
     {
       "rolls": 1,
       "entries": [

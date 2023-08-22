@@ -1,5 +1,5 @@
 {
-  "parent": "gis:other/root",
+  "parent": "gis:system/check_item_use/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
