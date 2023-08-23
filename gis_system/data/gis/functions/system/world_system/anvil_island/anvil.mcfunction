@@ -8,4 +8,4 @@ execute as @a at @s run playsound minecraft:item.bucket.fill player @s ~ ~ ~ 1 2
 tellraw @a {"text":"高い金属音と水の滴る音が聞こえた。"}
 execute in minecraft:overworld run setblock 92 52 68 minecraft:quartz_block
 data merge storage gis.adv27 {t:1}
-advancement grant @a only gis:_main/adv27
+advancement grant @a only gis:gameplay/_main/adv27

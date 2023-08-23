@@ -68,3 +68,6 @@ team modify gis_mine_high color yellow
 #gamerule sendCommandFeedback false
 
 #gamerule reducedDebugInfo true
+
+
+
