@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/advancements/check_item_use/prot_b"
+    "function": "gis:system/advancements/check_item_use/use_158_prot_b"
   }
 }

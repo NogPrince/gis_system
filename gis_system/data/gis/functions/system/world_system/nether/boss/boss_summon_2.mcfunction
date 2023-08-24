@@ -1,0 +1,1 @@
+scoreboard players set #nether_boss gis_event_flag 5

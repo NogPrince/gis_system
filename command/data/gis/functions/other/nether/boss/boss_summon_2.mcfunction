@@ -1,1 +1,0 @@
-scoreboard players set #nether_boss instant 5

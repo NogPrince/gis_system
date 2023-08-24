@@ -8,4 +8,4 @@ execute as @a at @s if predicate gis:in_puzzle_s in minecraft:gis_nether run clo
 execute as @a at @s if predicate gis:in_puzzle_s in minecraft:gis_nether if block -9 28 -98 minecraft:dead_brain_coral_block run clone -7 36 -93 -7 36 -93 -9 28 -98 replace force
 execute as @a at @s if predicate gis:in_puzzle_s run clear @s
 fill -59 11 -122 -60 11 -121 minecraft:end_gateway
-scoreboard players set #nether_boss gis_min_stone 1 
+scoreboard players set #nether_boss_pazzle gis_event_flag 1 

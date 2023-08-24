@@ -1,0 +1,36 @@
+
+{
+  "parent": "gis:system/check_location/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": 89,
+              "max": 95
+            },
+            "y": {
+              "min": 51,
+              "max": 57
+            },
+            "z": {
+              "min": 65,
+              "max": 71
+            }
+          },
+          "dimension": "minecraft:overworld",
+          "block": {
+            "blocks": [
+              "minecraft:trapped_chest"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gis:system/world_system/anvil_island/anvil"
+  }
+}

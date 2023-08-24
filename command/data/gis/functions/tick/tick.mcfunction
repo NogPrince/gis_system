@@ -7,13 +7,6 @@ execute as @a[scores={deathCount=1..},nbt={Health:20f}] run function gis:system/
 execute as @a at @s if predicate gis:in_puzzle_d run effect give @s minecraft:saturation 20 1 true
 
 
-#mob
-execute if score #spawner gis_spawner matches 1.. unless score #spawner instant_sub matches 1.. run advancement grant @a only gis:_main/adv26
-execute if score #spawner gis_spawner matches 1.. unless score #spawner instant_sub matches 1.. run data merge storage gis.adv26 {t:1}
-execute if score #spawner gis_spawner matches 1.. unless score #spawner instant_sub matches 1.. run scoreboard players set #spawner instant_sub 1
-execute if score #spawner gis_spawner matches 130.. if score #spawner instant_sub matches 1 run function gis:mob/villager/spawner25
-execute if score #spawner gis_spawner matches 260.. if score #spawner instant_sub matches 2 run function gis:mob/villager/spawner50
-execute if score #spawner gis_spawner matches 415.. if score #spawner instant_sub matches 3 run function gis:mob/villager/spawner80
 #other
 
 execute as 00000098-0000-0000-0000-000000000000 at @s[nbt={PortalCooldown:8}] run function gis:other/nether/puzzle/puzzle_s_flip
@@ -28,8 +21,6 @@ execute if score #spawner gis_min_coal matches 60.. run scoreboard players add #
 execute if score #spawner gis_min_coal matches 60.. run scoreboard players set #spawner gis_min_coal 0
 execute if score #spawner gis_min_iron matches 60.. run scoreboard players add #spawner gis_min_gold 1
 execute if score #spawner gis_min_iron matches 60.. run scoreboard players set #spawner gis_min_iron 0
-#nether_boss
-execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:other/nether/boss/boss_main 2t append
 #end_boss
 execute if entity @a[nbt={Dimension:"minecraft:end_boss"}] run schedule function gis:other/end/endboss/boss_main 2t append
 #scorereset

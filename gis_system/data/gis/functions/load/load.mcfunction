@@ -22,6 +22,8 @@ scoreboard objectives add gis_trigger___________________________________________
 scoreboard objectives add gis_instant1 dummy "temporarily use 1"
 scoreboard objectives add gis_instant2 dummy "temporarily use 2"
 scoreboard objectives add gis_event_flag dummy "world event flag"
+scoreboard objectives add gis_stats dummy "world statistics"
+
 scoreboard objectives add gis_timer1 dummy "timer"
 
 #minegame

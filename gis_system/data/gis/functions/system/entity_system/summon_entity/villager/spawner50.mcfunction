@@ -3,4 +3,4 @@ tellraw @a {"text":"スポナー破壊率50%突破！！\nホテル5階に製作
 execute as @a at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 1.7
 data merge storage gis.adv36 {t:1}
 advancement grant @a only gis:gameplay/_main/adv36
-scoreboard players set #spawner instant_sub 3
+scoreboard players set #spawner gis_event_flag 3

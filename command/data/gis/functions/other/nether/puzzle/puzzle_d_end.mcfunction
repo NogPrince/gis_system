@@ -7,4 +7,4 @@ execute as @a[distance=..5] at @s in minecraft:gis_nether run clone 5 36 -91 5 3
 execute as @a[distance=..5] at @s in minecraft:gis_nether if block 7 28 -98 minecraft:dead_brain_coral_block run clone 5 36 -93 5 36 -93 7 28 -98 replace force
 execute as @a[distance=..5] at @s in minecraft:gis_nether run function gis:system/player_system/set_player_attlibute
 execute as @a[distance=..5] at @s in minecraft:gis_nether run tp @s -0.50 26.00 -91.50 180 0
-scoreboard players set #nether_boss gis_min_stone 1 
+scoreboard players set #nether_boss_pazzle gis_event_flag 1 
