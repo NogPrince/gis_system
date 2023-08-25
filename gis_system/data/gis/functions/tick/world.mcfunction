@@ -6,3 +6,14 @@ execute if score #minegame gis_event_flag matches 1..2 run function gis:system/w
 
 #nether_boss
 execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:system/world_system/nether/boss/boss_main 2t append
+#end_boss
+execute if entity @a[nbt={Dimension:"minecraft:end_boss"}] run schedule function gis:system/world_system/end/endboss/boss_main 2t append
+
+#worldtimer
+execute if entity @a run scoreboard players add #world gis_timer1 1
+execute if score #world gis_timer1 matches 20.. run scoreboard players add #world gis_timer2 1
+execute if score #world gis_timer1 matches 20.. run scoreboard players set #world gis_timer1 0
+execute if score #world gis_timer2 matches 60.. run scoreboard players add #world gis_timer3 1
+execute if score #world gis_timer2 matches 60.. run scoreboard players set #world gis_timer2 0
+execute if score #world gis_timer3 matches 60.. run scoreboard players add #world gis_timer4 1
+execute if score #world gis_timer3 matches 60.. run scoreboard players set #world gis_timer3 0

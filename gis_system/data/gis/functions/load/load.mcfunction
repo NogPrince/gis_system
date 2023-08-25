@@ -24,7 +24,14 @@ scoreboard objectives add gis_instant2 dummy "temporarily use 2"
 scoreboard objectives add gis_event_flag dummy "world event flag"
 scoreboard objectives add gis_stats dummy "world statistics"
 
-scoreboard objectives add gis_timer1 dummy "timer"
+scoreboard objectives add gis_timer1 dummy "tick timer"
+scoreboard objectives add gis_timer2 dummy "second timer"
+scoreboard objectives add gis_timer3 dummy "minute timer"
+
+scoreboard objectives add gis_number dummy "constant number"
+scoreboard players set #4 gis_number 4
+scoreboard players set #6 gis_number 6
+
 
 #minegame
 scoreboard objectives add gis_mine_stone minecraft.mined:stone "mined stone"

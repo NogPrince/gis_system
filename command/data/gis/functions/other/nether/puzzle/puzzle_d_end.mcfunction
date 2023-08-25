@@ -1,6 +1,6 @@
 playsound minecraft:ui.toast.challenge_complete player @a[distance=..5] ~ ~ ~ 1 1
 execute as @a[distance=..5] at @s run title @s title {"text":"動のパズル：クリア"}
-execute as @a[distance=..5] at @s run advancement grant @s only gis:_main/adv17
+execute as @a[distance=..5] at @s run advancement grant @s only gis:gameplay/_main/adv17
 execute as @a[distance=..5] at @s run effect clear @s
 execute as @a[distance=..5] at @s in minecraft:gis_nether run setblock 5 27 -98 minecraft:air
 execute as @a[distance=..5] at @s in minecraft:gis_nether run clone 5 36 -91 5 36 -91 5 27 -98

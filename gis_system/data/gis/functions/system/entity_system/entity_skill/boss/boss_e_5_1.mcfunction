@@ -1,12 +1,12 @@
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:40}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_3
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:38}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_3
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:36}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_4
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:34}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_4
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:32}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_5
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:30}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_5
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:28}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_6
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:26}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_6
-execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:25}] at @s at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_7
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:40}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_3
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:38}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_3
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:36}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_4
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:34}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_4
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:32}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_5
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:30}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_5
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:28}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_6
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:26}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_6
+execute as @s[tag=gis_boss_e_51,nbt={PortalCooldown:25}] at @s at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_7
 execute as @s at @s run particle dust 0.588 0.612 0.639 0.5 ~ ~0.25 ~ 0 0 0 0 1 normal
 execute as @s at @s run particle dust 0.588 0.612 0.639 0.5 ~ ~0.5 ~ 0 0 0 0 1 normal
 execute as @s at @s run particle dust 0.588 0.612 0.639 0.5 ~ ~0.75 ~ 0 0 0 0 1 normal

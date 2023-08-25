@@ -1,5 +1,5 @@
-execute as @s[tag=gis_boss_e_51] at @s positioned ~ ~ ~ run function gis:mob/mobskill/boss_e/sub/particle_13
-execute as @s[tag=gis_boss_e_51] at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_12
+execute as @s[tag=gis_boss_e_51] at @s positioned ~ ~ ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
+execute as @s[tag=gis_boss_e_51] at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
 execute as @s at @s run particle portal ~ ~0.25 ~ 0.01 0 0.01 0 2 normal
 execute as @s at @s run particle portal ~ ~0.5 ~ 0.01 0 0.01 0 2 normal
 execute as @s at @s run particle portal ~ ~0.75 ~ 0.01 0 0.01 0 2 normal

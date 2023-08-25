@@ -1,14 +1,14 @@
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_12
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_14
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_13
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-1 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_12
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-0.5 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_14
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-0 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_13
-execute as @a at @s if predicate gis:in_boss_e run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~ 1 0
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s[nbt=!{PortalCooldown:200}] run schedule function gis:mob/mobskill/boss_e/boss_e_skill9_sub 1t append
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s[nbt={PortalCooldown:200}] run schedule function gis:mob/mobskill/boss_e/boss_e_skill9_sub2 1t append
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_14
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_14
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-0 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
+execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~ 1 0
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s[nbt=!{PortalCooldown:200}] run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill9_sub 1t append
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s[nbt={PortalCooldown:200}] run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill9_sub2 1t append
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run particle dust 0.588 0.612 0.639 1 ^ ^ ^-0.25 0 0 0 0 1 normal
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run particle dust 0.588 0.612 0.639 1 ^ ^ ^-0.5 0 0 0 0 1 normal
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run particle dust 0.588 0.612 0.639 1 ^ ^ ^-0.75 0 0 0 0 1 normal

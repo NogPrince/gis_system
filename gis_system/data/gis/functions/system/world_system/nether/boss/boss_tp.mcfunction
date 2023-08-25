@@ -1,4 +1,4 @@
-function gis:other/bossber_set
+function gis:system/player_system/bossbar_set
 
 execute unless score #nether_boss gis_event_flag matches -100 run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
 execute unless score #nether_boss gis_event_flag matches -100 run tellraw @s {"text":"不思議な力ではじかれた。\nボスと戦うにはアスレとパズルを一つずつクリアする必要がありそうだ"}
@@ -9,9 +9,9 @@ execute if score #nether_boss gis_event_flag matches 0 run tellraw @s {"text":"�
 execute if score #nether_boss gis_event_flag matches 1 run tag @a remove killed_nether_boss
 execute if score #nether_boss gis_event_flag matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run tp @s ~ 17 ~
 execute if score #nether_boss gis_event_flag matches 1 run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run kill @s
-execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss boss_reset 0
-execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_min_coal 0
-execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_min_iron 0
+execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_timer1 0
+execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_timer2 0
+execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_timer3 0
 execute if score #nether_boss gis_event_flag matches 1 in minecraft:gis_nether run summon minecraft:armor_stand 170.0 22.00 -1.0 {Tags:["gis_mob","gis_spawner_m","gis_kill","zpig_flamsoldier"]}
 execute if score #nether_boss gis_event_flag matches 1 in minecraft:gis_nether run summon minecraft:magma_cube 170.0 22.00 1.0 {Tags:["gis_mob","gis_spawner_m","gis_kill","zpig_firesoldier"]}
 execute if score #nether_boss gis_event_flag matches 1 in minecraft:gis_nether run summon minecraft:magma_cube 170.0 22.00 -3.0 {Tags:["gis_mob","gis_spawner_m","gis_kill","zpig_firesoldier"]}

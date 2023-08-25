@@ -1,10 +1,10 @@
 execute as 0000006e-0000-0000-0000-000300000000 run effect give @s minecraft:slowness 3 10 true
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^2 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_11
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_2
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_5
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:mob/mobskill/boss_e/sub/particle_3
-execute as @a at @s if predicate gis:in_boss_e run playsound minecraft:block.beacon.activate hostile @s ~ ~ ~ 1 0
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s run schedule function gis:mob/mobskill/boss_e/boss_e_skill8_sub2 1t append
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^2 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_11
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_2
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_5
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_3
+execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.activate hostile @s ~ ~ ~ 1 0
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill8_sub2 1t append
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s run particle end_rod ^ ^ ^0.25 0.5 0.5 0.5 0 1 normal
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s run particle end_rod ^ ^ ^0.5 0.5 0.5 0.5 0 1 normal
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s run particle end_rod ^ ^ ^0.75 0.5 0.5 0.5 0 1 normal

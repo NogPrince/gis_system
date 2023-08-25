@@ -1,5 +1,5 @@
-execute as @s[tag=gis_boss_e_c1] at @s positioned ~ ~ ~ run function gis:mob/mobskill/boss_e/sub/particle_13
-execute as @s[tag=gis_boss_e_c1] at @s positioned ~ ~16 ~ run function gis:mob/mobskill/boss_e/sub/particle_12
+execute as @s[tag=gis_boss_e_c1] at @s positioned ~ ~ ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
+execute as @s[tag=gis_boss_e_c1] at @s positioned ~ ~16 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
 execute as @s at @s run particle dust 0.588 0.612 0.639 1 ~ ~0.25 ~ 0 0 0 0 1 normal
 execute as @s at @s run particle dust 0.588 0.612 0.639 1 ~ ~0.5 ~ 0 0 0 0 1 normal
 execute as @s at @s run particle dust 0.588 0.612 0.639 1 ~ ~0.75 ~ 0 0 0 0 1 normal
