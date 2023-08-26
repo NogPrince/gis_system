@@ -26,13 +26,12 @@ https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15
 
 ### ・ネザーのボス 
 パズルとアスレをクリアしてこいと言われますが、パズルの方が未実装なので正攻法ではボスの結界を破れません。以下のコマンドで解放してください。
-
 scoreboard players set #nether_boss_pazzle gis_event_flag 1 
 
+アスレチックの方も一応載せておきます。
 scoreboard players set #nether_boss_athletic gis_event_flag 1
 
 解放したけど元に戻したい時は以下のコマンドをどうぞ。
-
 function gis:test/reset_score
 
 ### ・マインゲーム 
