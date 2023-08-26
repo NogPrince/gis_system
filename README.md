@@ -12,8 +12,11 @@ https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15
 
 ## ～やり方～
 1.ここのデータパックをダウンロードして、v0.3.3あたりのワールドのデータパックと置き換えます。 
+
 2.ワールドに1.19.4で入ります。 
+
 3.普通に遊ぶなりクリエイティブを使うなり、なにがしかの方法でテストプレイしたい場所にたどり着きます。 
+
 4.enjoy! 
 
 ※v0.3.3のワールドにぶち込むことで不具合が発生する可能性はあるので、ダメそうなら中止します。
@@ -23,7 +26,13 @@ https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15
 
 ・ネザーのボス 
 
+パズルとアスレをクリアしてこいと言われますが、
+
 ・マインゲーム 
+
+・特殊アイテム
+
+帰還印など。
 
 ## ～現在普通に遊べるところ～
 たぶんバグはないと思いますが、気分に応じてどうぞ。 
@@ -37,13 +46,23 @@ https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15
 
 ・ネザーのパズル 
 
+・グローツリー設定所
+
+・金床島、雷雨島、遺跡島
+
 ## ～動かない看板について～
 ホテルなどの看板が一部動かなくなっています。 
 以下に列挙されている既知のものは、コマンドか手で張り替えて対応してください。 
 
-replace_signs
-・ホテル村人再設置(フロント前)
+・ホテルフロント
 
+「ホテル村人再設置」、「チュートリアルへ行く」
+
+->function gis:test/replace_signsを実行
+
+・ホテルのエレベーター
+
+->function gis:test/give_allsignsを実行して、新しい看板に手で張り替え
 
 
 
