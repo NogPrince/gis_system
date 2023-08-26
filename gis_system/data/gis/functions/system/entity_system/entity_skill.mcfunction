@@ -13,8 +13,8 @@ execute as @s[tag=zpigl_wassoi] run function gis:system/entity_system/entity_ski
 execute as @s[tag=endm_gardian,predicate=gis:system/entity_check/is_portal_cooldown_0] run function gis:system/entity_system/entity_skill/skill_endm_gardian
 ###
 execute as @s[tag=prot_c] run function gis:system/entity_system/entity_skill/prot_c
-#execute as @s[tag=gis_boss_e_c1] run function gis:system/entity_system/entity_skill/boss_e_c1
-#execute as @s[tag=gis_boss_e_4] run function gis:system/entity_system/entity_skill/boss_e_4
-#execute as @s[tag=gis_boss_e_51] run function gis:system/entity_system/entity_skill/boss_e_5
-#execute as @s[tag=gis_boss_e_71] run function gis:system/entity_system/entity_skill/boss_e_7
-#execute as @s[tag=zpig_flamsoldier] run function gis:system/entity_system/entity_skill/zpig_flamsoldier
+#execute as @s[tag=gis_boss_e_c1] run function gis:system/entity_system/entity_skill/boss/boss_e_c1
+#execute as @s[tag=gis_boss_e_4] run function gis:system/entity_system/entity_skill/boss/boss_e_4
+#execute as @s[tag=gis_boss_e_51] run function gis:system/entity_system/entity_skill/boss/boss_e_5
+#execute as @s[tag=gis_boss_e_71] run function gis:system/entity_system/entity_skill/boss/boss_e_7
+execute as @s[tag=zpig_flamsoldier] run function gis:system/entity_system/entity_skill/skill_zpig_flamsoldier

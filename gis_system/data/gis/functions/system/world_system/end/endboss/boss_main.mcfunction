@@ -40,10 +40,10 @@ execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer
 execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer1 matches 20.. run scoreboard players set #end_boss gis_timer1 0
 execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer2 matches 60.. run scoreboard players add #end_boss gis_timer3 1
 execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer2 matches 60.. run scoreboard players set #end_boss gis_timer2 0
-execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s store result bossbar minecraft:end_boss value store result score @s instant run data get entity @s Health
-execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer1 matches 19 as 0000006e-0000-0000-0000-000300000000 at @s if score @s instant matches ..512 run effect give @s minecraft:instant_damage 1 1
-execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=!gis_eb_h] if score @s instant matches ..512 run tellraw @a[nbt={Dimension:"minecraft:end_boss"}] {"text":"全テヲ破壊シ尽クスノダ……"}
-execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=!gis_eb_h] if score @s instant matches ..512 run tag @s add gis_eb_h
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s store result bossbar minecraft:end_boss value store result score @s gis_instant1 run data get entity @s Health
+execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer1 matches 19 as 0000006e-0000-0000-0000-000300000000 at @s if score @s gis_instant1 matches ..512 run effect give @s minecraft:instant_damage 1 1
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=!gis_eb_h] if score @s gis_instant1 matches ..512 run tellraw @a[nbt={Dimension:"minecraft:end_boss"}] {"text":"全テヲ破壊シ尽クスノダ……"}
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=!gis_eb_h] if score @s gis_instant1 matches ..512 run tag @s add gis_eb_h
 execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer1 matches 19 as 0000006e-0000-0000-0000-000300000000 at @s[tag=gis_eb_h] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_c
 execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=gis_eb_h] positioned 0 78 0 rotated 0 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_1
 execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:50}] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_p

@@ -1,7 +1,7 @@
 function gis:system/player_system/bossbar_set
 
-execute unless score #nether_boss gis_event_flag matches -100 run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
-execute unless score #nether_boss gis_event_flag matches -100 run tellraw @s {"text":"不思議な力ではじかれた。\nボスと戦うにはアスレとパズルを一つずつクリアする必要がありそうだ"}
+execute if score #nether_boss gis_event_flag matches -100 run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
+execute if score #nether_boss gis_event_flag matches -100 run tellraw @s {"text":"不思議な力ではじかれた。\nボスと戦うにはアスレとパズルを一つずつクリアする必要がありそうだ"}
 
 execute if score #nether_boss gis_event_flag matches 0 run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
 execute if score #nether_boss gis_event_flag matches 0 run tellraw @s {"text":"ボスが復活していません。\nボスを復活させるにはBOSS再戦チケットを\nゲート横の篝火に使用してください。"}

@@ -27,6 +27,8 @@ scoreboard objectives add gis_stats dummy "world statistics"
 scoreboard objectives add gis_timer1 dummy "tick timer"
 scoreboard objectives add gis_timer2 dummy "second timer"
 scoreboard objectives add gis_timer3 dummy "minute timer"
+scoreboard objectives add gis_timer4 dummy "hour timer"
+
 
 scoreboard objectives add gis_number dummy "constant number"
 scoreboard players set #4 gis_number 4
@@ -59,7 +61,24 @@ scoreboard objectives add gis_mine_score_sidebar dummy "得点"
 bossbar add minecraft:minegame_time "マインゲーム 残り時間"
 bossbar set minegame_time max 1260
 bossbar set minegame_time style notched_6
-#bossbar set minegame_time color 
+bossbar set minegame_time color white
+
+
+#boss bossbar
+bossbar add minecraft:nether_boss_1 "烈火の剣士"
+bossbar set minecraft:nether_boss_1 max 1500
+bossbar set minecraft:nether_boss_1 style notched_6
+bossbar set minecraft:nether_boss_1 color red
+
+bossbar add minecraft:nether_boss_2 "業火の魔導士"
+bossbar set minecraft:nether_boss_2 max 3000
+bossbar set minecraft:nether_boss_2 style notched_6
+bossbar set minecraft:nether_boss_2 color purple
+
+bossbar add minecraft:end_boss "帝国の怨霊"
+bossbar set minecraft:end_boss max 1024
+bossbar set minecraft:end_boss style notched_6
+bossbar set minecraft:end_boss color purple
 
 
 #team

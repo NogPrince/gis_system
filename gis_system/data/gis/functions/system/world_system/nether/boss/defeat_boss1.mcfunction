@@ -1,5 +1,5 @@
 #ボス1に勝利
-execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s [{"text":"烈火の剣士討伐成功！\n討伐時間"},{"score":{"name":"#nether_boss","objective":"gis_min_iron"}},{"text":"分"},{"score":{"name":"#nether_boss","objective":"gis_min_coal"}},{"text":"秒"}]
+execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s [{"text":"烈火の剣士討伐成功！\n討伐時間"},{"score":{"name":"#nether_boss","objective":"gis_timer3"}},{"text":"分"},{"score":{"name":"#nether_boss","objective":"gis_timer2"}},{"text":"秒"}]
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run title @s title {"text":"討伐成功"}
 execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run tp @s ~ 17 ~
 execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run kill @s
