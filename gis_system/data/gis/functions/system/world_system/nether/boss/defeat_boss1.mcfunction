@@ -14,5 +14,5 @@ execute as @a at @s if predicate gis:system/position_check/in_boss_n run advance
 scoreboard players set #nether_boss gis_timer1 0
 scoreboard players set #nether_boss gis_timer2 0
 scoreboard players set #nether_boss gis_timer3 0
-function gis:system/player_system/bossbar_set
 execute in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 4
+function gis:system/player_system/bossbar_set

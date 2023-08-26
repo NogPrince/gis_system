@@ -25,5 +25,5 @@ execute in minecraft:gis_nether run summon minecraft:armor_stand 170.0 22.00 -1.
 scoreboard players set #nether_boss gis_timer1 0
 scoreboard players set #nether_boss gis_timer2 0
 scoreboard players set #nether_boss gis_timer3 0
-function gis:system/player_system/bossbar_set
 execute in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 8
+function gis:system/player_system/bossbar_set

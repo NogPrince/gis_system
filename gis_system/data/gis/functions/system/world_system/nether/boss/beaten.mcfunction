@@ -14,5 +14,5 @@ execute in minecraft:gis_nether run schedule clear gis:system/entity_system/enti
 execute in minecraft:gis_nether run fill 186 22 -18 153 22 15 minecraft:air replace fire
 execute in minecraft:gis_nether run fill 186 22 -18 153 22 15 minecraft:air replace lava
 execute in minecraft:gis_nether run fill 186 22 -18 153 30 15 minecraft:air replace magma_block
-execute in minecraft:gis_nether run function gis:system/player_system/bossbar_set
 execute in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 1
+execute in minecraft:gis_nether run function gis:system/player_system/bossbar_set

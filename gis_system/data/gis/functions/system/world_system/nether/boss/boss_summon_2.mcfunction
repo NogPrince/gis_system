@@ -13,5 +13,5 @@ execute in minecraft:gis_nether run summon minecraft:magma_cube 190.00 22.50 19.
 execute in minecraft:gis_nether run summon minecraft:magma_cube 190.00 22.50 -21.00 {Tags:["gis_mob","gis_spawner_m","gis_kill","ske_crimson"]}
 execute in minecraft:gis_nether run summon minecraft:magma_cube 150.00 22.50 19.00 {Tags:["gis_mob","gis_spawner_m","gis_kill","ske_crimson"]}
 execute in minecraft:gis_nether run summon minecraft:magma_cube 150.00 22.50 -21.00 {Tags:["gis_mob","gis_spawner_m","gis_kill","ske_crimson"]}
-function gis:system/player_system/bossbar_set
 execute in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 6
+function gis:system/player_system/bossbar_set
