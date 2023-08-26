@@ -1,0 +1,34 @@
+{
+    "parent": "gis:system/check_location/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 0,
+                "max": 12000
+              }
+            },
+            {
+              "condition": "minecraft:weather_check",
+              "raining": false,
+              "thundering": false
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "gis:system/world_system/ruin_island/open"
+    }
+  }
+  
