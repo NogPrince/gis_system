@@ -24,7 +24,7 @@ https://docs.google.com/spreadsheets/d/177VWXxDhIjOM03WKEwZAhB6L7xBLOote1AhFsS15
 ## ～現在テストプレイして欲しいところ～
 テストプレイとバグ報告求む！ 
 
-#### ・ネザーのボス 
+### ・ネザーのボス 
 パズルとアスレをクリアしてこいと言われますが、パズルの方が未実装なので正攻法ではボスの結界を破れません。以下のコマンドで解放してください。
 
 scoreboard players set #nether_boss_pazzle gis_event_flag 1 
@@ -35,14 +35,14 @@ scoreboard players set #nether_boss_athletic gis_event_flag 1
 
 function gis:test/reset_score
 
-#### ・マインゲーム 
+### ・マインゲーム 
 
 実装状況について特に注意点はありません。ただ、体感ではちょっと点数が渋い気がします。鉱石の出方が変わってるのかもしれません。
 
 チケットは必要に応じて以下のコマンドで入手してください。
 /give @p paper{ID:133,display:{Name:'{"text":"ミニゲームチケット","color":"blue","bold":true}',Lore:['{"text":"遊戯場で遊ぶために必要なチケット。"}','{"text":"世界各地に隠されている。"}','{"text":"無限にミニゲームができる","color":"black"}','{"text":"ミニゲームパスポートなるものもあるらしい……","color":"black"}']}} 64
 
-#### ・特殊アイテム
+### ・特殊アイテム
 
 帰還印、エクステンダーなど。村人やチェストから入手して使ってみてください。
 
