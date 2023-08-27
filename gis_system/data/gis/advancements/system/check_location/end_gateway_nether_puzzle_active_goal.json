@@ -38,6 +38,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/advancements/check_location/end_gateway_nether_puzzle_lobby_active_goal"
+    "function": "gis:system/advancements/check_location/end_gateway_nether_puzzle_active_goal"
   }
 }
