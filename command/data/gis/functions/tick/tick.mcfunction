@@ -1,6 +1,5 @@
 
 #ステータス
-execute as @a at @s if predicate gis:in_puzzle_d run effect give @s minecraft:saturation 20 1 true
 
 
 #other
