@@ -8,3 +8,7 @@ execute as @a at @s run playsound minecraft:item.bucket.fill player @s ~ ~ ~ 1 2
 tellraw @a {"text":"高い金属音と水の滴る音が聞こえた。"}
 data merge storage gis.adv27 {t:1}
 advancement grant @a only gis:gameplay/_main/adv27
+
+schedule function gis:system/world_system/anvil_island/anvil_sub1 1s append
+schedule function gis:system/world_system/anvil_island/anvil_sub2 1s append
+

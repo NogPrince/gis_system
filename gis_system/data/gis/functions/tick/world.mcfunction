@@ -4,6 +4,10 @@ execute if score #minegame gis_event_flag matches 0 if entity @a[tag=minegame,pr
 #ゲーム中
 execute if score #minegame gis_event_flag matches 1..2 run function gis:system/world_system/minigame/tick
 
+#thunder_island
+execute in minecraft:overworld positioned 206 173 -60 if entity @a[distance=..130] run function gis:system/world_system/thunder_island/thunder
+
+
 #nether_boss
 execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:system/world_system/nether/boss/boss_main 2t append
 #end_boss
