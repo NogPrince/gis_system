@@ -1,0 +1,2 @@
+function gis:system/world_system/warp/warp_nether_puzzle_goal
+advancement revoke @s only gis:system/check_location/end_gateway_nether_puzzle_passive_goal
