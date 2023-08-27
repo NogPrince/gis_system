@@ -17,4 +17,4 @@ execute as @s[tag=prot_c] run function gis:system/entity_system/entity_skill/pro
 #execute as @s[tag=gis_boss_e_4] run function gis:system/entity_system/entity_skill/boss/boss_e_4
 #execute as @s[tag=gis_boss_e_51] run function gis:system/entity_system/entity_skill/boss/boss_e_5
 #execute as @s[tag=gis_boss_e_71] run function gis:system/entity_system/entity_skill/boss/boss_e_7
-execute as @s[tag=zpig_flamsoldier] run function gis:system/entity_system/entity_skill/skill_zpig_flamsoldier
+execute as @s[tag=zpig_flamsoldier] run function gis:system/entity_system/entity_skill/boss/boss_n/skill_zpig_flamsoldier

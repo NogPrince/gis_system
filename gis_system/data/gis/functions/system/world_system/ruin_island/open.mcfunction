@@ -1,3 +1,5 @@
+say open
+
 fill 136 141 -18 137 147 -24 minecraft:air
 setblock 148 153 -21 minecraft:air
 

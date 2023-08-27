@@ -1,6 +1,6 @@
 
 
-
+say close
 
 
 setblock 148 153 -21 minecraft:redstone_block
