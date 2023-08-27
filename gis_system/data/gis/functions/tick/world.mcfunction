@@ -9,6 +9,10 @@ execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule functi
 #end_boss
 execute if entity @a[nbt={Dimension:"minecraft:end_boss"}] run schedule function gis:system/world_system/end/endboss/boss_main 2t append
 
+execute if entity 0000006e-0000-0001-0000-000000000000 run function gis:system/world_system/end/end_gate_l
+execute if entity 0000006e-0000-0001-0000-000000000001 run function gis:system/world_system/end/end_gate_r
+execute if entity 0000006e-0000-0001-0000-000000000002 run function gis:system/world_system/end/end_gate_s
+
 #worldtimer
 execute if entity @a run scoreboard players add #world gis_timer1 1
 execute if score #world gis_timer1 matches 20.. run scoreboard players add #world gis_timer2 1

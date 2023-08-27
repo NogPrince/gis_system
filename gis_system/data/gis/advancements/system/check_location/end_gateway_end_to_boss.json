@@ -12,19 +12,19 @@
               "location": {
                 "position": {
                   "x": {
-                    "min": 11,
-                    "max": 12
-                  },
+                    "min": -347,
+                    "max": -346
+                  }, 
                   "y": {
-                    "min": 20,
-                    "max": 23
+                    "min": 57,
+                    "max": 100
                   },
                   "z": {
-                    "min": -61,
-                    "max": -59
+                    "min": -4,
+                    "max": 4
                   }
                 },
-                "dimension": "minecraft:gis_nether",
+                "dimension": "minecraft:the_end",
                 "block": {
                   "blocks": [
                     "minecraft:end_gateway"
@@ -38,6 +38,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/advancements/check_location/end_gateway_nether_puzzle_lobby_active"
+    "function": "gis:system/advancements/check_location/end_gateway_end_to_boss"
   }
 }
