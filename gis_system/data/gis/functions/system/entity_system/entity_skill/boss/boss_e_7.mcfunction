@@ -7,4 +7,4 @@ execute as @s[nbt={PortalCooldown:4}] at @s run function gis:system/entity_syste
 execute as @s[nbt={PortalCooldown:5}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_2
 execute as @s[nbt={PortalCooldown:6}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_2
 execute as @s[nbt={PortalCooldown:7}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_2
-execute as @s at @s positioned ~ ~ ~ at @a[distance=..1] run summon minecraft:magma_cube ~ ~ ~ {Silent:1b,PortalCooldown:3,Size:0,wasOnGround:1b,Tags:["gis_mob","gis_effect","gis_inv","gis_kill"],CustomName:'{"text":"�鍑�^�����g�U�֒e"}',Attributes:[{Name:generic.attack_damage,Base:50}]}
+execute as @s at @s positioned ~ ~ ~ at @a[distance=..1] run summon minecraft:magma_cube ~ ~ ~ {Silent:1b,PortalCooldown:3,Size:0,wasOnGround:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Tags:["gis_mob","gis_kill"],CustomName:'{"text":"�鍑�^�����g�U�֒e"}',Attributes:[{Name:generic.attack_damage,Base:50}]}

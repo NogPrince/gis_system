@@ -2,6 +2,7 @@
 
 say close
 
+#place template 
 
 setblock 148 153 -21 minecraft:redstone_block
 
