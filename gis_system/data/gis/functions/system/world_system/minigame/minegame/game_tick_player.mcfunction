@@ -15,11 +15,11 @@ scoreboard players operation @s[scores={gis_mine_redstone=1..}] gis_mine_score +
 scoreboard players operation @s[scores={gis_mine_lapis=1..}] gis_mine_score += #give_score gis_mine_lapis
 scoreboard players operation @s[scores={gis_mine_diamond=1..}] gis_mine_score += #give_score gis_mine_diamond
 #double score(ラピスラズリの効果)
-scoreboard players operation @s[scores={gis_mine_stone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_stone
-scoreboard players operation @s[scores={gis_mine_coal=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_coal
-scoreboard players operation @s[scores={gis_mine_redstone=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_redstone
-scoreboard players operation @s[scores={gis_mine_lapis=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_lapis
-scoreboard players operation @s[scores={gis_mine_diamond=1..},nbt={ActiveEffects:[{Id:26b,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_diamond
+scoreboard players operation @s[scores={gis_mine_stone=1..},nbt={ActiveEffects:[{Id:26,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_stone
+scoreboard players operation @s[scores={gis_mine_coal=1..},nbt={ActiveEffects:[{Id:26,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_coal
+scoreboard players operation @s[scores={gis_mine_redstone=1..},nbt={ActiveEffects:[{Id:26,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_redstone
+scoreboard players operation @s[scores={gis_mine_lapis=1..},nbt={ActiveEffects:[{Id:26,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_lapis
+scoreboard players operation @s[scores={gis_mine_diamond=1..},nbt={ActiveEffects:[{Id:26,Amplifier:-128b}]}] gis_mine_score += #give_score gis_mine_diamond
 
 #skill
 execute as @s[scores={gis_mine_skill=2}] if score #minegame gis_timer1 matches 1200 run effect give @s minecraft:haste 8 20
