@@ -33,6 +33,7 @@ scoreboard objectives add gis_timer4 dummy "hour timer"
 scoreboard objectives add gis_number dummy "constant number"
 scoreboard players set #4 gis_number 4
 scoreboard players set #6 gis_number 6
+scoreboard players set #9 gis_number 9
 
 
 #minegame

@@ -1,26 +1,10 @@
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s unless block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} unless block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload remove ~ ~ 
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s if block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload add ~ ~
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s if block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload add ~ ~
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s unless block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} unless block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run kill @s
+execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s run function gis:system/item/use_xteleporter_reload
+
+
 execute unless entity @e[type=minecraft:marker,distance=..0.5,tag=xteleporter_a] run summon minecraft:marker ~ ~ ~ {Tags:["xteleporter_a","xteleporter_red"]}
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_pink,tag=xteleporter_a] add xteleporter_red_a
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_pink,tag=xteleporter_a] remove xteleporter_pink
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_green,tag=xteleporter_a] add xteleporter_pink
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_green,tag=xteleporter_a] remove xteleporter_green
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_yellow,tag=xteleporter_a] add xteleporter_green
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_yellow,tag=xteleporter_a] remove xteleporter_yellow
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_blue,tag=xteleporter_a] add xteleporter_yellow
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_blue,tag=xteleporter_a] remove xteleporter_blue
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red,tag=xteleporter_a] add xteleporter_blue
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red,tag=xteleporter_a] remove xteleporter_red
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red_a,tag=xteleporter_a] add xteleporter_red
-execute unless predicate gis:system/entity_check/is_sneak run tag @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red_a,tag=xteleporter_a] remove xteleporter_red_a
-execute unless predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red,tag=xteleporter_a] run data modify block ~ ~ ~ Text2 set value '[{"text":"チャンネル:","color":"white"},{"text":"red","color":"red"}]'
-execute unless predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_blue,tag=xteleporter_a] run data modify block ~ ~ ~ Text2 set value '[{"text":"チャンネル:","color":"white"},{"text":"blue","color":"blue"}]'
-execute unless predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_yellow,tag=xteleporter_a] run data modify block ~ ~ ~ Text2 set value '[{"text":"チャンネル:","color":"white"},{"text":"yellow","color":"yellow"}]'
-execute unless predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_green,tag=xteleporter_a] run data modify block ~ ~ ~ Text2 set value '[{"text":"チャンネル:","color":"white"},{"text":"green","color":"green"}]'
-execute unless predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_pink,tag=xteleporter_a] run data modify block ~ ~ ~ Text2 set value '[{"text":"チャンネル:","color":"white"},{"text":"pink","color":"light_purple"}]'
+execute unless predicate gis:system/entity_check/is_sneak as @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_a] run function gis:system/item/use_xteleporter_sub
 execute unless predicate gis:system/entity_check/is_sneak run playsound minecraft:ui.button.click block @a ~ ~ ~ 0.5 2
+
 execute if predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red,tag=xteleporter_a] store result score @s gis_instant1 run execute if entity @e[type=minecraft:marker,tag=xteleporter_red,tag=xteleporter_b]
 execute if predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_blue,tag=xteleporter_a] store result score @s gis_instant1 run execute if entity @e[type=minecraft:marker,tag=xteleporter_blue,tag=xteleporter_b]
 execute if predicate gis:system/entity_check/is_sneak if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_yellow,tag=xteleporter_a] store result score @s gis_instant1 run execute if entity @e[type=minecraft:marker,tag=xteleporter_yellow,tag=xteleporter_b]

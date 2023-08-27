@@ -1,7 +1,5 @@
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s unless block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} unless block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload remove ~ ~ 
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s if block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload add ~ ~
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s if block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run forceload add ~ ~
-execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s unless block ~ ~ ~ minecraft:dark_oak_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} unless block ~ ~ ~ minecraft:dark_oak_wall_sign{Text1:'{"color":"green","text":"双方向テレポーター"}'} run kill @s
+execute as @e[type=minecraft:marker,tag=xteleporter_a] at @s run function gis:system/item/use_xteleporter_reload
+
 playsound minecraft:ui.button.click block @a ~ ~ ~ 0.5 2
 execute if entity @e[type=minecraft:marker,distance=..0.5,sort=nearest,tag=xteleporter_red,tag=xteleporter_a] store result score @s gis_instant1 run execute if entity @e[type=minecraft:marker,tag=xteleporter_red,tag=xteleporter_b]
 execute if score @s gis_instant1 matches 2.. at @e[type=minecraft:marker,tag=xteleporter_red,limit=1,sort=furthest] rotated as @s run tp @s ~ ~ ~ ~ ~

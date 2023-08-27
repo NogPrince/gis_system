@@ -7,7 +7,8 @@ scoreboard players set @s gis_trigger_timer -300
 scoreboard players enable @s gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 tellraw @s {"text":"詰み防止用kill","hoverEvent":{"action":"show_text","contents":[{"text":"詰み防止用killはログイン後15秒間一度だけ有効です"}]},"clickEvent":{"action":"run_command","value":"/trigger gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ set 11"}}
 
-execute as @s[nbt={Health:20f}] run function gis:system/player_system/set_player_attlibute_sub
+execute as @s[nbt={Health:20f}] run function gis:system/player_system/set_player_attlibute
+
 #ネザー
 execute as @s[x=143,y=17,z=-28,dx=53,dy=26,dz=53,nbt={Dimension:"minecraft:gis_nether"}] at @s run tag @s add killed_nether_boss
 execute as @s[x=143,y=17,z=-28,dx=53,dy=26,dz=53,nbt={Dimension:"minecraft:gis_nether"}] at @s run execute in minecraft:gis_nether run tp @s 124.00 19.06 -5.0 270 0
