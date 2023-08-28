@@ -6,7 +6,8 @@ execute if score #minegame gis_event_flag matches 1..2 run function gis:system/w
 
 #thunder_island
 execute unless score #thunder_island_stopped gis_event_flag matches 1 in minecraft:overworld positioned 206 173 -60 if entity @a[distance=..130] run function gis:system/world_system/thunder_island/thunder
-execute unless score #thunder_island_stopped gis_event_flag matches 1 in minecraft:overworld unless block 206 173 -60 redstone_lamp[lit=true] run function gis:system/world_system/thunder_island/thunder_sub
+execute unless score #thunder_island_stopped gis_event_flag matches 1 in minecraft:overworld if block 206 173 -60 redstone_lamp[lit=false] run function gis:system/world_system/thunder_island/thunder_sub
+execute unless score #thunder_island_stopped gis_event_flag matches 1 in minecraft:overworld if block 206 173 -60 air run function gis:system/world_system/thunder_island/thunder_sub
 
 #nether_boss
 execute if entity @a[nbt={Dimension:"minecraft:gis_nether"}] run schedule function gis:system/world_system/nether/boss/boss_main 2t append
