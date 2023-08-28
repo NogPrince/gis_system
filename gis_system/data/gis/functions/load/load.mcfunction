@@ -82,6 +82,8 @@ bossbar set minecraft:end_boss style notched_6
 bossbar set minecraft:end_boss color purple
 
 
+
+
 #team
 scoreboard objectives setdisplay sidebar.team.white gis_mine_score_sidebar
 scoreboard objectives setdisplay sidebar.team.yellow gis_mine_high
