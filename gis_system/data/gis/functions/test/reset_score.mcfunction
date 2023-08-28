@@ -16,6 +16,8 @@ scoreboard players set #end_boss gis_event_flag 1
 scoreboard players set #minegame gis_event_flag 0
 
 scoreboard players set #thunder_island gis_event_flag 0
+scoreboard players set #thunder_island_stopped gis_event_flag 0
+
 
 #storage
 data remove storage minecraft:gis.adv19 {t:1}
@@ -26,6 +28,10 @@ data remove storage minecraft:gis.adv31 {t:1}
 data remove storage minecraft:gis.adv35 {t:1}
 data remove storage minecraft:gis.adv36 {t:1}
 data remove storage minecraft:gis.adv37 {t:1}
+
+#advancement
+advancement revoke @a everything
+
 
 
 
