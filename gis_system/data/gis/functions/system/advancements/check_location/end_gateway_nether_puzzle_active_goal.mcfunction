@@ -5,5 +5,6 @@ function gis:system/player_system/set_player_attlibute
 execute in minecraft:gis_nether run setblock 5 27 -98 minecraft:air
 execute in minecraft:gis_nether run clone 5 36 -91 5 36 -91 5 27 -98
 execute in minecraft:gis_nether if block 7 28 -98 minecraft:dead_brain_coral_block run clone 5 36 -93 5 36 -93 7 28 -98 replace
+advancement grant @s only gis:gameplay/_main/adv17
 scoreboard players set #nether_boss_pazzle gis_event_flag 1 
 advancement revoke @s only gis:system/check_location/end_gateway_nether_puzzle_active_goal

@@ -15,7 +15,7 @@ execute if score #nether_boss gis_event_flag matches 2 if score #nether_boss gis
 execute if score #nether_boss gis_event_flag matches 2 as 0000006e-0000-0000-0000-000100000000 at @s store result bossbar minecraft:nether_boss_1 value run data get entity @s Health
 #3killboss
 #function分けた
-execute if score #nether_boss gis_event_flag matches 2 as @a at @s if predicate gis:system/position_check/in_boss_n unless entity 0000006e-0000-0000-0000-000100000000 run function gis:system/world_system/nether/boss/defeat_boss1
+execute if score #nether_boss gis_event_flag matches 2 if entity @a[predicate=gis:system/position_check/in_boss_n] unless entity 0000006e-0000-0000-0000-000100000000 run function gis:system/world_system/nether/boss/defeat_boss1
 
 #-2
 execute if score #nether_boss gis_event_flag matches -2 in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 2
@@ -66,5 +66,5 @@ execute if score #nether_boss gis_event_flag matches 6 as 0000006e-0000-0000-000
 
 #7killboss2
 #function分けた
-execute if score #nether_boss gis_event_flag matches 6 as @a at @s if predicate gis:system/position_check/in_boss_n unless entity 0000006e-0000-0000-0000-000200000000 run function gis:system/world_system/nether/boss/defeat_boss2
+execute if score #nether_boss gis_event_flag matches 6 if entity @a[predicate=gis:system/position_check/in_boss_n] unless entity 0000006e-0000-0000-0000-000200000000 run function gis:system/world_system/nether/boss/defeat_boss2
 
