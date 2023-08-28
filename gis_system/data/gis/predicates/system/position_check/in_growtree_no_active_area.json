@@ -13,6 +13,10 @@
       {
         "condition": "minecraft:reference",
         "name": "gis:system/position_check/in_nether_puzzl_active"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "gis:system/position_check/in_minegame_area"
       }
     ]
   }
