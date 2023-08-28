@@ -17,7 +17,7 @@ scoreboard objectives setdisplay list gis_tp
 scoreboard objectives setdisplay sidebar gis_player_health
 
 #特殊/多用途
-scoreboard objectives add gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ trigger "trigger"
+scoreboard objectives add gis_trigger trigger "trigger"
 
 scoreboard objectives add gis_instant1 dummy "temporarily use 1"
 scoreboard objectives add gis_instant2 dummy "temporarily use 2"

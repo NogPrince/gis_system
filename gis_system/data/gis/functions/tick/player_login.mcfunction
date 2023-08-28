@@ -7,8 +7,8 @@ title @s times 10 40 10
 
 #詰み防止kill
 scoreboard players set @s gis_trigger_timer -300
-scoreboard players enable @s gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-tellraw @s {"text":"詰み防止用kill","hoverEvent":{"action":"show_text","contents":[{"text":"詰み防止用killはログイン後15秒間一度だけ有効です"}]},"clickEvent":{"action":"run_command","value":"/trigger gis_trigger_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ set 11"}}
+scoreboard players enable @s gis_trigger
+tellraw @s {"text":"詰み防止用kill","hoverEvent":{"action":"show_text","contents":[{"text":"詰み防止用killはログイン後15秒間一度だけ有効です"}]},"clickEvent":{"action":"run_command","value":"/trigger gis_trigger set 11"}}
 
 execute as @s[nbt={Health:20f}] run function gis:system/player_system/set_player_attlibute
 
