@@ -1,7 +1,5 @@
 
 
-say close
-
 
 execute in overworld run place template gis:ruins_treasury_gate 136 141 -24
 
