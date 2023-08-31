@@ -7,7 +7,7 @@
         "max": 200
       }
     },
-    "biome": "minecraft:snowy_taiga_hills",
+    "biome": "minecraft:snowy_taiga",
     "dimension": "minecraft:overworld"
   }
 }
