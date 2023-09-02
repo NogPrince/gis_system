@@ -4,4 +4,3 @@ execute if predicate gis:system/world_check/weather_not_thunder unless score #th
 execute if predicate gis:system/world_check/weather_not_thunder unless score #thunder_island gis_event_flag matches 1 run scoreboard players set #thunder_island gis_event_flag 1
 execute unless predicate gis:system/world_check/weather_not_thunder if score #thunder_island gis_event_flag matches 1 run scoreboard players set #thunder_island gis_event_flag 0
 
-#schedule function gis:system/world_system/thunder_island/thunder_sub 3t replace
