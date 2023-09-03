@@ -7,16 +7,26 @@
 scoreboard players set #spawner gis_event_flag 0
 scoreboard players set #spawner gis_stats 0
 
+scoreboard players set #gis_total_tp gis_total_tp 0
+
+
 scoreboard players set #nether_boss gis_event_flag -100
 scoreboard players set #nether_boss_athletic gis_event_flag 0
 scoreboard players set #nether_boss_pazzle gis_event_flag 0
 
 scoreboard players set #end_boss gis_event_flag 1
 
-scoreboard players set #minegame gis_event_flag 0
-
 scoreboard players set #thunder_island gis_event_flag 0
 scoreboard players set #thunder_island_stopped gis_event_flag 0
+
+scoreboard players set #minegame gis_event_flag 0
+
+scoreboard players reset @a gis_mine_skill
+scoreboard players reset @a gis_mine_high
+scoreboard players reset @a gis_player_health
+
+scoreboard players set @a gis_tp 0
+scoreboard players set @a gis_total_tp 0
 
 
 #storage
