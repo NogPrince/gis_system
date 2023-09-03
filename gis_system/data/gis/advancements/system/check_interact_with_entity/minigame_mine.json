@@ -6,7 +6,7 @@
       "conditions": {
         "entity": {
           "type": "minecraft:villager",
-          "nbt": "{Tags:[\"gis_mob\",\"gis_vil\",\"vil_20\"]}"
+          "nbt": "{Tags:[\"gis_villager_minigame_manager\"]}"
         }
       }
     }

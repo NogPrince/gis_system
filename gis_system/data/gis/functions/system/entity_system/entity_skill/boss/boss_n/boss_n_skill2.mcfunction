@@ -1,4 +1,4 @@
-execute as 0000006e-0000-0000-0000-000200000000 at @s run summon minecraft:spawner_minecart 170.0 38.00 -1.0 {NoGravity:1b,PortalCooldown:100,SpawnCount:30,SpawnRange:17,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:11,MaxNearbyEntities:90,RequiredPlayerRange:40,Tags:["gis_mob","gis_kill"],SpawnData:{id:"minecraft:small_fireball",Owner:[I;110,0,1,0],power:[0.0,-0.1,0.0],Tags:["gis_mob","gis_boss_n_2"]}}
+execute as 0000006e-0000-0000-0000-000200000000 at @s run summon minecraft:spawner_minecart 170.0 38.00 -1.0 {NoGravity:1b,PortalCooldown:100,SpawnCount:30,SpawnRange:17,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:11,MaxNearbyEntities:90,RequiredPlayerRange:40,Tags:["gis_mob","gis_kill"],SpawnData:{entity:{id:"minecraft:small_fireball",Owner:[I;110,0,1,0],power:[0.0,-0.1,0.0],Tags:["gis_mob","gis_boss_n_2"]}}}
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s {"text":"降り注げ…墜炎"}
 schedule function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill2_sub 5t append
 schedule function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill2_sub 15t append
