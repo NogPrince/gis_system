@@ -6,6 +6,11 @@ execute as @s[scores={gis_trigger=1}] run title @s title "そんな感じです�
 #詰み防止kill
 execute as @s[scores={gis_trigger=11}] at @s run function gis:system/player_system/trigger_kill
 
+#グロウツリーリセット
+execute as @s[scores={gis_trigger=21}] at @s if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset
+execute as @s[scores={gis_trigger=22}] at @s if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset_cancel
+
+
 #hotel teleport
 execute as @s[scores={gis_trigger=201}] at @s if predicate gis:system/position_check/in_hotel run tp @s 220.00 18.06 59.00 270 0
 execute as @s[scores={gis_trigger=202}] at @s if predicate gis:system/position_check/in_hotel run tp @s 220.50 27.06 44.00 180 0

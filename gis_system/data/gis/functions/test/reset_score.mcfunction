@@ -45,4 +45,5 @@ advancement revoke @a everything
 
 
 
+#summon interaction 0.0 10.0 -4.0 {width:2f,height:0.885f,response:1b,Tags:["tree_reset_interaction"]}
 
