@@ -14,12 +14,14 @@ execute as @a[nbt={Dimension:"minecraft:growtree"}] run scoreboard players opera
 execute as @a[nbt={Dimension:"minecraft:growtree"}] run scoreboard players operation @s gis_instant2 += @s gis_instant1
 
 execute at @s as @a[nbt={Dimension:"minecraft:growtree"}] run tellraw @s [{"selector":"@p"},{"text":"がグロウツリーをリセットしようとしています。"}]
-execute as @a[nbt={Dimension:"minecraft:growtree"}] run tellraw @s [{"text":"グロウツリーをリセットすると、あなたには"},{"score":{"name":"@s","objective":"gis_instant1"},"color":"gold"},{"text":"TPが戻ってきて、利用可能TPは合計で","color":"white"},{"score":{"name":"@s","objective":"gis_instant2"},"color":"gold"},{"text":"TPとなります。","color":"white"}]
+execute as @a[nbt={Dimension:"minecraft:growtree"}] run tellraw @s [{"text":"あなたには"},{"score":{"name":"@s","objective":"gis_instant1"},"color":"gold"},{"text":"TPが戻ってきて、利用可能TPは合計で","color":"white"},{"score":{"name":"@s","objective":"gis_instant2"},"color":"gold"},{"text":"TPとなります。","color":"white"}]
+
+execute at @s as @a[nbt={Dimension:"minecraft:growtree"},distance=0.01..] run tellraw @s [{"text":"リセットを避けたい場合は、グロウツリー設定所から離れてください。","color":"white"}]
 
 
 #確認tellraw
 scoreboard players enable @s gis_trigger
-tellraw @s {"text":"本当にグロウツリーをリセットしますか？"}
+tellraw @s {"text":"本当にリセットしますか？"}
 tellraw @s [{"text":"[はい]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger gis_trigger set 21"}},{"text":"          ","clickEvent":{"action":"run_command","value":""}},{"text":"[いいえ]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger gis_trigger set 22"}}]
 
 
