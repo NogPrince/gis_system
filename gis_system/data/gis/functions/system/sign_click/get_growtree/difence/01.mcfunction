@@ -6,6 +6,6 @@ execute as @s unless score @s gis_instant1 matches 1.. unless score @s gis_tp ma
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 4.. run function gis:system/sign_click/sound_sign_click_2
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 4.. run tellraw @s [{"text":"[体力増強Ⅰ]","color":"green"},{"text":"を開放しました","color":"white","bold":false}]
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 4.. run advancement grant @s only gis:gameplay/growtree_ability_defence/01_
-execute as @s unless score @s gis_gis_instant11 matches 1.. if score @s gis_tp matches 4.. run advancement grant @s only gis:gameplay/_main/adv13
+execute as @s unless score @s gis_instant11 matches 1.. if score @s gis_tp matches 4.. run advancement grant @s only gis:gameplay/_main/adv13
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 4.. run scoreboard players remove @s gis_tp 4
 scoreboard players reset @s gis_instant1

@@ -6,7 +6,7 @@ execute as @s if score @s gis_instant1 matches 1.. run playsound minecraft:ui.bu
 execute as @s unless score @s gis_instant1 matches 1.. unless score @s gis_tp matches 60.. run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 2
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 60.. run function gis:system/sign_click/sound_sign_click_2
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 60.. run tellraw @s [{"text":"[瞬足Ⅱ]","color":"green"},{"text":"を開放しました","color":"white","bold":false}]
-execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 60.. run advancement grant @s only gis:gameplay/_main/adv15
+
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 60.. run advancement grant @s only gis:gameplay/growtree_ability_attack/1211111
 execute as @s unless score @s gis_instant1 matches 1.. if score @s gis_tp matches 60.. run scoreboard players remove @s gis_tp 60
 scoreboard players reset @s gis_instant1
