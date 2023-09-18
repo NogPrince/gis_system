@@ -16,7 +16,7 @@
           "predicate": {
             "player": {
               "advancements": {
-                "gis:ability_special/14": true
+                "gis:gameplay/growtree_ability_special/_14": true
               }
             }
           }
