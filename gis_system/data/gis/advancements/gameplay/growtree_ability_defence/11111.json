@@ -20,5 +20,8 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "function": "gis:system/player_system/set_player_attlibute"
   }
 }
