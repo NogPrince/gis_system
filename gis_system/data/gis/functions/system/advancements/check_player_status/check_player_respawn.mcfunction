@@ -5,7 +5,9 @@ function gis:system/player_system/bossbar_set
 function gis:system/player_system/set_player_attlibute
 scoreboard players reset @s gis_instant1
 
-execute as @s at @s if dimension minecraft:tutorial run gamemode adventure @s[gamemode=!creative]
+gamemode adventure @s[gamemode=!creative]
+execute as @s at @s if dimension minecraft:overworld run gamemode survival @s[gamemode=!creative]
+
 
 execute as @s[tag=minegame] at @s unless predicate gis:system/position_check/in_minigame_dimension run tellraw @s {"text":"ミニゲームエリアを出たため、マインゲームへのエントリーを取り消しました。","color": "red"}
 execute as @s[tag=minegame] at @s unless predicate gis:system/position_check/in_minigame_dimension run tag @s remove minegame

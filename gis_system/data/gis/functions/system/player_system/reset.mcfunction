@@ -12,7 +12,7 @@ execute as @a[nbt={Dimension:"minecraft:growtree"}] at @s run function gis:syste
 execute as @a[nbt={Dimension:"minecraft:growtree"}] at @s run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 1 1
 title @a[nbt={Dimension:"minecraft:growtree"}] title {"text":"グロウツリーリセット！"}
 effect give @a[nbt={Dimension:"minecraft:growtree"}] minecraft:instant_damage 1 30 true
-tellraw @a[nbt={Dimension:"minecraft:growtree"}] {"text":"グロウツリー設定所内にいるプレイヤーの\nグロウツリーをリセットしました。","color":"green"}
+tellraw @a {"text":"グロウツリー設定所内にいるプレイヤーの\nグロウツリーをリセットしました。","color":"green"}
 
 #演出
 data merge entity @e[type=minecraft:item_display,limit=1,tag=reset_crystal] {Tags:[reset_crystal,gis_kill],start_interpolation:0,interpolation_duration:20,item_display:"ground",brightness:{sky:15,block:15},transformation:{right_rotation:{angle:3.14,axis:[0f,1f,0f]},translation:[0f,0f,0f],scale:[0.1f,0.1f,0.1f]},item:{id:"minecraft:large_amethyst_bud",Count:1b}}

@@ -7,8 +7,8 @@ execute as @s[scores={gis_trigger=1}] run title @s title "そんな感じです�
 execute as @s[scores={gis_trigger=11}] at @s run function gis:system/player_system/trigger_kill
 
 #グロウツリーリセット
-execute as @s[scores={gis_trigger=21}] at @s if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset
-execute as @s[scores={gis_trigger=22}] at @s if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset_cancel
+execute as @s[scores={gis_trigger=21}] at @s if dimension growtree if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset
+execute as @s[scores={gis_trigger=22}] at @s if dimension growtree if score #tree_reset gis_event_flag matches 1 run function gis:system/player_system/reset_cancel
 
 
 #hotel teleport
