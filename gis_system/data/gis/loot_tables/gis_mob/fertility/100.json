@@ -15,8 +15,13 @@
           "entity": "killer",
           "predicate": {
             "player": {
-              "advancements": {
-                "gis:gameplay/growtree_ability_special/_14": true
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "gis:gameplay/growtree_ability_special/_14": true
+                  }
+                }
               }
             }
           }
