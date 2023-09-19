@@ -6,5 +6,5 @@ execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run scoreboard pla
 execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run scoreboard players operation @s gis_instant1 -= @s gis_total_tp
 execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run tellraw @s [{"text":"ログインしていない間に貯められていた"},{"score":{"name":"@s","objective":"gis_instant1"}},{"text":"TPを受け取りました。"}]
 execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1 2
-execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run scoreboard players operation @s nowTP += @s gis_instant1
+execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run scoreboard players operation @s gis_tp += @s gis_instant1
 execute if score @s gis_total_tp < #gis_total_tp gis_total_tp run scoreboard players operation @s gis_total_tp += @s gis_instant1
