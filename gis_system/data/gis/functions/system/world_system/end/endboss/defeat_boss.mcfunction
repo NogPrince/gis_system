@@ -16,8 +16,8 @@ scoreboard players set #end_boss gis_timer1 0
 scoreboard players set #end_boss gis_timer2 0
 scoreboard players set #end_boss gis_timer3 0
 execute in minecraft:end_boss as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_e run kill @s
-execute in minecraft:end_boss run scoreboard players set #end_boss_summon gis_timer1 0
-execute in minecraft:end_boss run scoreboard players set #end_boss gis_event_flag 5
+scoreboard players set #end_boss_summon gis_timer1 0
+scoreboard players set #end_boss gis_event_flag 5
 
-execute in minecraft:end_boss run function gis:system/player_system/bossbar_set
+function gis:system/player_system/bossbar_set
 
