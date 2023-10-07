@@ -10,6 +10,13 @@ scoreboard players set #spawner gis_stats 0
 scoreboard players set #gis_total_tp gis_total_tp 0
 
 
+scoreboard players set #world gis_timer1 0
+scoreboard players set #world gis_timer2 0
+scoreboard players set #world gis_timer3 0
+scoreboard players set #world gis_timer4 0
+
+
+
 scoreboard players set #nether_boss gis_event_flag -100
 scoreboard players set #nether_boss_athletic gis_event_flag 0
 scoreboard players set #nether_boss_pazzle gis_event_flag 0
