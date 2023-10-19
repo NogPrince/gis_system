@@ -1,4 +1,3 @@
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000002 at @s positioned 0 76 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_8
 execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run summon minecraft:armor_stand ~ ~ ~ {PortalCooldown:40,NoGravity:1b,Marker:1b,Invisible:1b,Tags:["gis_mob","gis_m_skill","gis_boss_e_51","gis_kill"]}
 execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run summon minecraft:armor_stand ~ ~ ~ {PortalCooldown:40,NoGravity:1b,Marker:1b,Invisible:1b,Tags:["gis_mob","gis_m_skill","gis_boss_e_51","gis_kill"]}
 execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run summon minecraft:armor_stand ~ ~ ~ {PortalCooldown:40,NoGravity:1b,Marker:1b,Invisible:1b,Tags:["gis_mob","gis_m_skill","gis_boss_e_51","gis_boss_e_52","gis_kill"]}
