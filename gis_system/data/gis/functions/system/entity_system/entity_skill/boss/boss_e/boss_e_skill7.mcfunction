@@ -5,7 +5,8 @@ execute as @a at @s if predicate gis:system/position_check/in_boss_e run tellraw
 
 
 
-#execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000007 at @s positioned 0 70 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_9
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000007 at @s positioned 0 70 0 run summon item_display ~ ~ ~ {PortalCooldown:100,Rotation:[0F,-90F],Tags:["gis_boss_e_7_display","gis_mob","gis_kill"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[12f,12f,1f]},item:{id:"minecraft:structure_void",Count:1b,tag:{CustomModelData:1009}}}
+
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000007 at @s positioned 0 68 0 run summon item_display ~ ~ ~ {PortalCooldown:100,Rotation:[0F,-90F],Tags:["gis_boss_e_7_display","gis_mob","gis_kill"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,1f]},item:{id:"minecraft:structure_void",Count:1b,tag:{CustomModelData:1002}}}
 
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000007 at @s positioned 0 69 0 run summon item_display ~ ~ ~ {PortalCooldown:100,Rotation:[0F,-90F],Tags:["gis_boss_e_7_display","gis_mob","gis_kill"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1f]},item:{id:"minecraft:structure_void",Count:1b,tag:{CustomModelData:1002}}}
