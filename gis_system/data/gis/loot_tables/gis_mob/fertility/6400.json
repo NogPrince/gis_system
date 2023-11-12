@@ -2,17 +2,11 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 64,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald_block",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 64
-            }
-          ]
+          "name": "minecraft:emerald_block"
         }
       ],
       "conditions": [
@@ -20,14 +14,10 @@
           "condition": "minecraft:entity_properties",
           "entity": "killer",
           "predicate": {
-            "player": {
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "gis:gameplay/growtree_ability_special/_14": true
-                  }
-                }
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "gis:gameplay/growtree_ability_special/_14": true
               }
             }
           }
