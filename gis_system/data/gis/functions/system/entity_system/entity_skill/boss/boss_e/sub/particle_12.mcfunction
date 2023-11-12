@@ -1,3 +1,5 @@
+
+
 # 円 1
 particle electric_spark ^0 ^ ^-1 0 0 0 0 1
 particle electric_spark ^0.20791 ^ ^-0.97815 0 0 0 0 1
