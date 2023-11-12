@@ -43,7 +43,10 @@ execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-0
 execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=!gis_eb_h] if score @s gis_instant1 matches ..512 run tag @s add gis_eb_h
 execute if score #end_boss gis_event_flag matches 3 if score #end_boss gis_timer1 matches 19 as 0000006e-0000-0000-0000-000300000000 at @s[tag=gis_eb_h] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_c
 execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[tag=gis_eb_h] positioned 0 78 0 rotated 0 0 run execute as 0000006e-0000-0000-0000-000300000065 at @s run tp @s ~ ~ ~ ~2 ~
-execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:50}] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_p
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:50}] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_flag
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:30}] as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.3 2
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:10}] as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.5 2
+execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:10}] as @a at @s if predicate gis:system/position_check/in_boss_e run data merge entity 0000006e-0000-0000-0000-000900000001 {start_interpolation:-1,interpolation_duration:5,Rotation:[0F,-90F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,7f],scale:[300f,300f,0f]}}
 execute if score #end_boss gis_event_flag matches 3 as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:0}] run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill
 
 #4bosskill
