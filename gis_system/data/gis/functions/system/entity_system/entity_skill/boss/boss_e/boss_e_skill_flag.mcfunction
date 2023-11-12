@@ -10,3 +10,4 @@ execute as 0000006e-0000-0000-0000-000300000000 if score #end_boss gis_instant1 
 execute as 0000006e-0000-0000-0000-000900000001 at @s run ride @s mount 0000006e-0000-0000-0000-000300000000
 execute as 0000006e-0000-0000-0000-000900000001 at @s run data merge entity @s {start_interpolation:-1,interpolation_duration:1,Rotation:[0F,-90F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,7f],scale:[0f,0f,0f]}}
 execute as 0000006e-0000-0000-0000-000900000001 at @s run data merge entity @s {start_interpolation:-1,interpolation_duration:40,Rotation:[0F,-90F],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,7f],scale:[20f,20f,1f]}}
+execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.1 2
