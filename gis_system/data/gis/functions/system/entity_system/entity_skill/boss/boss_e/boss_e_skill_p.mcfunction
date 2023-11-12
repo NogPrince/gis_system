@@ -1,13 +1,5 @@
 execute as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_15
-execute if score #end_boss gis_instant1 matches 0 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_16
-execute if score #end_boss gis_instant1 matches 1 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_17
-execute if score #end_boss gis_instant1 matches 2 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_18
-execute if score #end_boss gis_instant1 matches 3 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_19
-execute if score #end_boss gis_instant1 matches 4 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_20
-execute if score #end_boss gis_instant1 matches 5 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_21
-execute if score #end_boss gis_instant1 matches 6 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_22
-execute if score #end_boss gis_instant1 matches 7 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_23
-execute if score #end_boss gis_instant1 matches 8 as 0000006e-0000-0000-0000-000300000000 at @s positioned ~ ~7 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_24
+execute as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:50}] as @a at @s if predicate gis:system/position_check/in_boss_e run function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_flag
 execute as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:50}] as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.1 2
 execute as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:30}] as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.3 2
 execute as 0000006e-0000-0000-0000-000300000000 at @s[nbt={PortalCooldown:10}] as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:item.totem.use hostile @s ~ ~ ~ 0.5 2
