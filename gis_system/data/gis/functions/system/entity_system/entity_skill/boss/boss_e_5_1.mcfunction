@@ -1,1 +1,2 @@
-data merge entity @s {Tags:["gis_mob","gis_kill"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,20f,0.5f]},item:{id:"minecraft:gray_stained_glass",Count:1b}}
+data merge entity @s {PortalCooldown:20,Tags:["gis_mob","gis_kill"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,20f,0f]},item:{id:"minecraft:gray_stained_glass",Count:1b}}
+data merge entity @s {start_interpolation:-1,interpolation_duration:20,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,20f,1f]},item:{id:"minecraft:gray_stained_glass",Count:1b}}
