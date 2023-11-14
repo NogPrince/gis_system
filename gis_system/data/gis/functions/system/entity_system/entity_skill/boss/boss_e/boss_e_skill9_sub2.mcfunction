@@ -1,5 +1,9 @@
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
+
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000500000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^1 run tp @s ~ ~ ~ ~ ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000600000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
+
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_14
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
