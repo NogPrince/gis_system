@@ -1,5 +1,4 @@
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000900000008 at @s rotated as 0000006e-0000-0000-0000-000300000008 rotated ~ 0 run tp @s ~ ~ ~ ~ ~
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000800000008 at @s rotated as 0000006e-0000-0000-0000-000300000008 rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 execute as 0000006e-0000-0000-0000-000300000000 run effect give @s minecraft:slowness 3 10 true
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.activate hostile @s ~ ~ ~ 1 0
