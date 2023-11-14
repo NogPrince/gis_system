@@ -3,11 +3,14 @@ execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run 
 
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000500000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^1 run tp @s ~ ~ ~ ~ ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000600000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000700000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^0.5 run tp @s ~ ~ ~ ~ ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000800000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 positioned ^ ^ ^-0.5 run tp @s ~ ~ ~ ~ ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000200000009 positioned 0 63 0 rotated as 0000006e-0000-0000-0000-000300000009 run tp @s ~ ~ ~ ~ ~
 
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
+#execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_14
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^0 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_13
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
+#execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-1 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s positioned ^ ^ ^-0.5 rotated ~ 90 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_14
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.activate hostile @s ~ ~ ~ 1 0
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill9_sub2 1t append
