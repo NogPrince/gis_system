@@ -50,7 +50,7 @@ data remove storage minecraft:gis.adv37 {t:1}
 advancement revoke @a everything
 
 
-
+fill 4 66 -4 -4 62 4 air
 
 #summon interaction 0.0 10.0 -4.0 {width:2f,height:0.885f,response:1b,Tags:["tree_reset_interaction"]}
 
