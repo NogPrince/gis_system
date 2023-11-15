@@ -1,6 +1,8 @@
 execute as @s[type=#gis:can_drown] at @s[predicate=gis:system/position_check/in_water] run data modify entity @s InWaterTime set value 0
 execute as @s[tag=gis_particle] run function gis:system/entity_system/entity_skill/skill_entity_particle
-execute as @s[tag=gis_void_resist,predicate=gis:system/position_check/under_-64] run function gis:system/entity_system/entity_skill/skill_entity_void_resist
+execute as @s[tag=gis_void_resist,predicate=gis:system/position_check/under_-64,predicate=!gis:system/position_check/in_boss_e] run function gis:system/entity_system/entity_skill/skill_entity_void_resist
+execute as @s[tag=gis_void_resist,predicate=gis:system/position_check/under_0,predicate=gis:system/position_check/in_boss_e] run function gis:system/entity_system/entity_skill/skill_entity_void_resist
+
 
 ###
 execute as @s[tag=spi_web,predicate=gis:system/entity_check/is_portal_cooldown_0] run function gis:system/entity_system/entity_skill/skill_spi_web
