@@ -6,6 +6,11 @@ execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000008 at @s faci
 
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at 0000006e-0000-0000-0000-000300000008 rotated as 0000006e-0000-0000-0000-000300000008 run tp @s ~ ~ ~ ~ ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at @s[nbt={PortalCooldown:179}] run data merge entity @s {start_interpolation:-1,interpolation_duration:20,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.3f,0.3f,60f]}}
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at @s[nbt={PortalCooldown:100}] run data merge entity @s {start_interpolation:-1,interpolation_duration:20,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.1f,0.1f,60f]}}
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at @s[nbt={PortalCooldown:80}] run data merge entity @s {start_interpolation:-1,interpolation_duration:20,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,60f]}}
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at @s[nbt={PortalCooldown:61}] run data merge entity @s {start_interpolation:-1,interpolation_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.01f,0.01f,60f]},item:{id:"minecraft:white_concrete_powder",Count:1b}}
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000008 at @s[nbt={PortalCooldown:60}] run data merge entity @s {start_interpolation:-1,interpolation_duration:5,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.6f,0.6f,60f]},item:{id:"minecraft:white_concrete_powder",Count:1b}}
+
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000900000008 at @s rotated as 0000006e-0000-0000-0000-000300000008 rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000800000008 at @s rotated as 0000006e-0000-0000-0000-000300000008 rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~ 1 0
