@@ -1,5 +1,5 @@
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~-0.7 ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~0.7 ~
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000009 at @s run tp @s ~ ~ ~ ~0.7 ~
 
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000400000009 at @s rotated as 0000006e-0000-0000-0000-000300000009 run tp @s ~ ~ ~ ~ ~
 execute in minecraft:end_boss as 0000006e-0000-0000-0000-000900000009 at @s rotated as 0000006e-0000-0000-0000-000400000009 rotated ~ 0 run tp @s ~ ~ ~ ~ ~
