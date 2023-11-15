@@ -6,4 +6,4 @@ execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:10}] on passengers run data 
 execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:10}] on passengers run data merge entity @s[tag=gis_boss_e_c1_down] {start_interpolation:-1,interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,1f]}}
 data merge entity @s[tag=gis_boss_e_c1,nbt={PortalCooldown:27}] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.1f,35f,0.1f]},item:{id:"minecraft:white_concrete_powder",Count:1b}}
 tag @s[tag=gis_boss_e_c1,nbt={PortalCooldown:27}] add gis_boss_e_c1_beam
-execute as @s[tag=gis_boss_e_51,tag=gis_boss_e_c1_beam] at @s run function gis:system/entity_system/entity_skill/boss/boss_c1_sub
+execute as @s[tag=gis_boss_e_51,tag=gis_boss_e_c1_beam] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_sub
