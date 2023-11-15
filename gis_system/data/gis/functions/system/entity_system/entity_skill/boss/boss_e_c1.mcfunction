@@ -1,41 +1,9 @@
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:40}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:39}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:38}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:37}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:36}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:35}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:34}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:33}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:32}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:31}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:30}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:29}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:28}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:27}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:26}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:25}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:24}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:23}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:22}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:21}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:20}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:19}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:18}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:17}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:16}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:15}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:14}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:13}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:12}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:11}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:10}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:9}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_2
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:8}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_3
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:7}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_3
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:6}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_3
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:5}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_3
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:4}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_3
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:3}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:2}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:1}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
-execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:0}] at @s run function gis:system/entity_system/entity_skill/boss/boss_e_c1_1
+data merge entity @s[tag=gis_boss_e_c1,nbt={PortalCooldown:40}] {start_interpolation:-1,interpolation_duration:8,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.3f,35f,0.3f]}}
+execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:40}] on passengers run data merge entity @s[tag=gis_boss_e_c1_up] {start_interpolation:-1,interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,17.5f],scale:[5f,5f,1f]}}
+execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:40}] on passengers run data merge entity @s[tag=gis_boss_e_c1_down] {start_interpolation:-1,interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,1f]}}
+data merge entity @s[tag=gis_boss_e_c1,nbt={PortalCooldown:32}] {start_interpolation:-1,interpolation_duration:4,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.1f,35f,0.1f]}}
+execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:10}] on passengers run data merge entity @s[tag=gis_boss_e_c1_up] {start_interpolation:-1,interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,17.5f],scale:[0f,0f,1f]}}
+execute as @s[tag=gis_boss_e_c1,nbt={PortalCooldown:10}] on passengers run data merge entity @s[tag=gis_boss_e_c1_down] {start_interpolation:-1,interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,1f]}}
+data merge entity @s[tag=gis_boss_e_c1,nbt={PortalCooldown:27}] {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.1f,35f,0.1f]},item:{id:"minecraft:white_concrete_powder",Count:1b}}
+tag @s[tag=gis_boss_e_c1,nbt={PortalCooldown:27}] add gis_boss_e_c1_beam
+execute as @s[tag=gis_boss_e_51,tag=gis_boss_e_c1_beam] at @s run function gis:system/entity_system/entity_skill/boss/boss_c1_sub
