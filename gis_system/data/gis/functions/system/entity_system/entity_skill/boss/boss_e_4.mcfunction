@@ -1,1 +1,0 @@
-execute as @s at @s positioned ~ ~1 ~ rotated ~ 0 run function gis:system/entity_system/entity_skill/boss/boss_e/sub/particle_12
