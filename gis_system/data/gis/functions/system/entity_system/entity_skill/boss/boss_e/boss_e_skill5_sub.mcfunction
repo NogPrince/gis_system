@@ -11,4 +11,4 @@ execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run summon item_disp
 execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run spreadplayers ~ ~ 3 12 false @e[tag=gis_boss_e_51,nbt={PortalCooldown:41}]
 execute in minecraft:end_boss positioned 0 63 0 as @r[nbt={Dimension:"minecraft:end_boss"},distance=..22] at @s run spreadplayers ~ ~ 3 5 false @e[tag=gis_boss_e_52,nbt={PortalCooldown:41}]
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~ 1 0
-execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000002 at @s run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill5_sub 7t append
+execute in minecraft:end_boss as 0000006e-0000-0000-0000-000300000066 at @s run schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill5_sub 7t append
