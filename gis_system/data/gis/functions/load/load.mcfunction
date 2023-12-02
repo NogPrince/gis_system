@@ -98,7 +98,7 @@ team modify gis_mine_high color yellow
 
 gamerule commandBlockOutput false
 gamerule disableRaids true
-gamerule doLimitedCrafting true
+gamerule doLimitedCrafting false
 gamerule doPatrolSpawning false
 gamerule doTraderSpawning false
 gamerule doVinesSpread false
@@ -106,7 +106,7 @@ gamerule forgiveDeadPlayers false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule randomTickSpeed 3
-gamerule reducedDebugInfo true
+gamerule reducedDebugInfo false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks false
