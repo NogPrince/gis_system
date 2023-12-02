@@ -96,8 +96,20 @@ team modify gis_mine_high color yellow
 
 #gamerule
 
-gamerule sendCommandFeedback false
+gamerule commandBlockOutput false
+gamerule disableRaids true
+gamerule doLimitedCrafting true
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule doVinesSpread false
+gamerule forgiveDeadPlayers false
+gamerule mobGriefing false
+gamerule naturalRegeneration false
+gamerule randomTickSpeed 3
 gamerule reducedDebugInfo true
-
+gamerule sendCommandFeedback false
+gamerule spawnRadius 0
+gamerule spectatorsGenerateChunks false
+gamerule universalAnger true
 
 
