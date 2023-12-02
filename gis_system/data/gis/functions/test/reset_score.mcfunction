@@ -37,14 +37,14 @@ scoreboard players set @a gis_total_tp 0
 
 
 #storage
-data remove storage minecraft:gis.adv19 {t:1}
-data remove storage minecraft:gis.adv26 {t:1}
-data remove storage minecraft:gis.adv27 {t:1}
-data remove storage minecraft:gis.adv28 {t:1}
-data remove storage minecraft:gis.adv31 {t:1}
-data remove storage minecraft:gis.adv35 {t:1}
-data remove storage minecraft:gis.adv36 {t:1}
-data remove storage minecraft:gis.adv37 {t:1}
+data remove storage minecraft:gis.adv19 t
+data remove storage minecraft:gis.adv26 t
+data remove storage minecraft:gis.adv27 t
+data remove storage minecraft:gis.adv28 t
+data remove storage minecraft:gis.adv31 t
+data remove storage minecraft:gis.adv35 t
+data remove storage minecraft:gis.adv36 t
+data remove storage minecraft:gis.adv37 t
 
 #advancement
 advancement revoke @a everything
