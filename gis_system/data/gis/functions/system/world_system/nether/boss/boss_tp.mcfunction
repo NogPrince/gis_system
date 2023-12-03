@@ -16,12 +16,12 @@ execute if score #nether_boss gis_event_flag matches 1 in minecraft:gis_nether r
 execute if score #nether_boss gis_event_flag matches 1 in minecraft:gis_nether run summon minecraft:magma_cube 170.0 22.00 -3.0 {Tags:["gis_mob","gis_spawner_m","gis_kill","zpig_firesoldier"]}
 
 execute if score #nether_boss gis_event_flag matches 1.. as @s[tag=!killed_nether_boss] run spawnpoint @s 99 19 -11
-execute if score #nether_boss gis_event_flag matches 1..2 run execute in minecraft:gis_nether run title @s[tag=!killed_nether_boss] title {"text":"烈火の剣士 討伐開始"}
-execute if score #nether_boss gis_event_flag matches 6 run execute in minecraft:gis_nether run title @s[tag=!killed_nether_boss] title {"text":"業火の魔導士 討伐開始"}
+execute if score #nether_boss gis_event_flag matches 1..2 run execute in minecraft:gis_nether run title @s[tag=!killed_nether_boss] title {"text":"劫火の剣士 討伐開始"}
+execute if score #nether_boss gis_event_flag matches 6 run execute in minecraft:gis_nether run title @s[tag=!killed_nether_boss] title {"text":"業火の魔導師 討伐開始"}
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run tp @s[tag=!killed_nether_boss] 150.0 22.50 -1.0 270 0
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run scoreboard players set @s[tag=!killed_nether_boss] boss_reset 0
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run tp @s[tag=killed_nether_boss] 124.00 19.06 -5.0 270 0
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run tellraw @s[tag=killed_nether_boss] {"text":"ボスエリアは中のプレイヤーが全滅するか\nボスを討伐して再召喚するまで再入場できません。"}
-execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_event_flag -2
+execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_event_flag 2
 
 function gis:system/player_system/bossbar_set

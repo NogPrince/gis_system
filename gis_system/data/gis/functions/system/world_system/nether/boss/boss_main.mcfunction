@@ -17,8 +17,6 @@ execute if score #nether_boss gis_event_flag matches 2 as 0000006e-0000-0000-000
 #function分けた
 execute if score #nether_boss gis_event_flag matches 2 if entity @a[predicate=gis:system/position_check/in_boss_n] unless entity 0000006e-0000-0000-0000-000100000000 run function gis:system/world_system/nether/boss/defeat_boss1
 
-#-2
-execute if score #nether_boss gis_event_flag matches -2 in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 2
 
 #4break
 #5boss2standby
@@ -42,7 +40,7 @@ execute if score #nether_boss gis_event_flag matches 6 if score #nether_boss gis
 execute if score #nether_boss gis_event_flag matches 6 if score #nether_boss gis_timer2 matches 30..39 as 0000006e-0000-0000-0000-000200000002 at @s run tp @s ~ ~ ~ ~ ~-1
 execute if score #nether_boss gis_event_flag matches 6 if score #nether_boss gis_timer2 matches 40..49 as 0000006e-0000-0000-0000-000200000002 at @s run tp @s ~ ~ ~ ~ ~1
 execute if score #nether_boss gis_event_flag matches 6 if score #nether_boss gis_timer2 matches 50..59 as 0000006e-0000-0000-0000-000200000002 at @s run tp @s ~ ~ ~ ~ ~-1
-execute if score #nether_boss gis_event_flag matches 6 if predicate gis:system/random_chance/rand10 as 0000006e-0000-0000-0000-000200000000 at @s at @a[distance=..5] run summon minecraft:potion ~ ~3.5 ~ {Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:9371648,CustomPotionEffects:[{Id:2b,Amplifier:1b,Duration:200}]}}}
+execute if score #nether_boss gis_event_flag matches 6 if predicate gis:system/random_chance/rand10 as 0000006e-0000-0000-0000-000200000000 at @s at @a[distance=..5] run summon minecraft:potion ~ ~3.5 ~ {Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:9371648,CustomPotionEffects:[{Id:2,Amplifier:1b,Duration:200}]}}}
 execute if score #nether_boss gis_event_flag matches 6 as @a[nbt={ActiveEffects:[{Id:2,Amplifier:1b,Duration:198}]}] at @s if predicate gis:system/position_check/in_boss_n run effect clear @s minecraft:fire_resistance
 execute if score #nether_boss gis_event_flag matches 6 as 0000006e-0000-0000-0000-000200000000 at @s store result bossbar minecraft:nether_boss_2 value store result score @s gis_instant1 run data get entity @s Health
 execute if score #nether_boss gis_event_flag matches 6 as 0000006e-0000-0000-0000-000200000000 at @s[tag=!gis_nb_h] if score @s gis_instant1 matches ..512 run function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill_s

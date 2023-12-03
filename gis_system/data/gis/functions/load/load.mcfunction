@@ -66,12 +66,12 @@ bossbar set minegame_time color white
 
 
 #boss bossbar
-bossbar add minecraft:nether_boss_1 "烈火の剣士"
+bossbar add minecraft:nether_boss_1 "劫火の剣士"
 bossbar set minecraft:nether_boss_1 max 1024
 bossbar set minecraft:nether_boss_1 style notched_6
 bossbar set minecraft:nether_boss_1 color red
 
-bossbar add minecraft:nether_boss_2 "業火の魔導士"
+bossbar add minecraft:nether_boss_2 "業火の魔導師"
 bossbar set minecraft:nether_boss_2 max 1024
 bossbar set minecraft:nether_boss_2 style notched_6
 bossbar set minecraft:nether_boss_2 color purple

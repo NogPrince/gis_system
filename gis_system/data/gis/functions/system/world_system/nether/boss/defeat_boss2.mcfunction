@@ -18,7 +18,7 @@ execute in minecraft:gis_nether run schedule clear gis:system/entity_system/enti
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run effect clear @s
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run effect give @s minecraft:instant_health 10 5
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run advancement grant @s only gis:gameplay/_main/adv21
-execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s [{"text":"業火の魔導士討伐成功！\n討伐時間"},{"score":{"name":"#nether_boss","objective":"gis_timer3"}},{"text":"分"},{"score":{"name":"#nether_boss","objective":"gis_timer2"}},{"text":"秒"}]
+execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s [{"text":"業火の魔導師討伐成功！\n討伐時間"},{"score":{"name":"#nether_boss","objective":"gis_timer3"}},{"text":"分"},{"score":{"name":"#nether_boss","objective":"gis_timer2"}},{"text":"秒"}]
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run title @s title {"text":"討伐成功"}
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute in minecraft:gis_nether run summon minecraft:armor_stand 170.0 22.00 -1.0 {Small:1b,Marker:1b,Invisible:1b,Tags:["gis_mob","gis_ridedown"],Passengers:[{id:"minecraft:villager",Silent:1b,Invulnerable:1b,NoAI:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}],Tags:["gis_mob","gis_rideup","gis_ridedown","vil_24"],Passengers:[{id:"minecraft:armor_stand",CustomNameVisible:1b,Marker:1b,Invisible:1b,Tags:["gis_mob","gis_rideup"],CustomName:'{"text":"帰還する"}'}]}],ArmorItems:[{},{},{},{id:'minecraft:beacon',Count:1b}]}

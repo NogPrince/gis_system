@@ -4,11 +4,11 @@
         "item": "minecraft:golden_sword"
       },
       "title": {
-        "text": "烈火の剣",
+        "text": "劫火の剣",
         "color": "white"
       },
       "description": {
-        "text": "烈火の剣士を倒す",
+        "text": "劫火の剣士を倒す",
         "color": "green"
       },
       "frame": "task",
