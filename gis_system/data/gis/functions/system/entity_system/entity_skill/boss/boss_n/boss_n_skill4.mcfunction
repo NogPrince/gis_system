@@ -4,7 +4,7 @@ schedule function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill
 schedule function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill4_sub4 2s
 schedule function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill4_sub5 2.5s
 
-say abc
+
 function gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill4_tick
 
 execute as @a at @s if predicate gis:system/position_check/in_boss_n run tellraw @s {"text":"連なり落ちよ…環雷"}
