@@ -22,6 +22,6 @@ execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraf
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run scoreboard players set @s[tag=!killed_nether_boss] boss_reset 0
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run tp @s[tag=killed_nether_boss] 124.00 19.06 -5.0 270 0
 execute if score #nether_boss gis_event_flag matches 1.. run execute in minecraft:gis_nether run tellraw @s[tag=killed_nether_boss] {"text":"ボスエリアは中のプレイヤーが全滅するか\nボスを討伐して再召喚するまで再入場できません。"}
-execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_event_flag 2
+execute if score #nether_boss gis_event_flag matches 1 run scoreboard players set #nether_boss gis_event_flag -2
 
 function gis:system/player_system/bossbar_set

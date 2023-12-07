@@ -17,6 +17,8 @@ execute if score #nether_boss gis_event_flag matches 2 as 0000006e-0000-0000-000
 #function分けた
 execute if score #nether_boss gis_event_flag matches 2 if entity @a[predicate=gis:system/position_check/in_boss_n] unless entity 0000006e-0000-0000-0000-000100000000 run function gis:system/world_system/nether/boss/defeat_boss1
 
+#-2
+execute if score #nether_boss gis_event_flag matches -2 in minecraft:gis_nether run scoreboard players set #nether_boss gis_event_flag 2
 
 #4break
 #5boss2standby
