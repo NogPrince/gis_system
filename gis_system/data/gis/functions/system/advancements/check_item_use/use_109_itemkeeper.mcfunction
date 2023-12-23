@@ -22,7 +22,7 @@ execute if score @s gis_instant2 matches 1.. as @s[nbt={SelectedItem:{id:"minecr
 execute as @s if score @s gis_instant2 matches 1.. run playsound minecraft:item.totem.use player @s ~ ~ ~ 1 2
 execute as @s if score @s gis_instant2 matches 1.. run function gis:system/item/register_itemkeeper
 
-tellraw @s[scores={gis_instant2=-1}] {"text":"仕様上、シュルカーボックスに印を付けることはできません。"}
+tellraw @s[scores={gis_instant2=-1}] {"text":"シュルカーボックスに印を付けることはできません。"}
 
 tellraw @s[scores={gis_instant2=0}] {"text":"メインハンドに印をつけたいアイテムをもって使用してください。"}
 scoreboard players reset @s gis_instant2
