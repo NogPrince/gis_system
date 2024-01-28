@@ -3,4 +3,3 @@ weather clear
 data merge storage gis.adv28 {t:1}
 advancement grant @a only gis:gameplay/_main/adv28
 scoreboard players set #thunder_island_stopped gis_event_flag 1 
-schedule function gis:system/world_system/ruin_island/open 10s
