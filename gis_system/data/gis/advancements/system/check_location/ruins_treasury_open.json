@@ -6,23 +6,12 @@
       "conditions": {
         "player": [
           {
-            "condition": "minecraft:alternative",
-            "terms": [
-              {
-                "condition": "minecraft:time_check",
-                "value": {
-                  "min": 23991,
-                  "max": 24000
-                }
-              },
-              {
-                "condition": "minecraft:time_check",
-                "value": {
-                  "min": 0,
-                  "max": 12000
-                }
-              }
-            ]
+            "condition": "minecraft:time_check",
+            "value": {
+              "min": 0,
+              "max": 12000
+            },
+            "period": 24000
           },
           {
             "condition": "minecraft:weather_check",

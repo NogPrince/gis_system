@@ -13,8 +13,9 @@
                 "condition": "minecraft:time_check",
                 "value": {
                   "min": 12001,
-                  "max": 23990
-                }
+                  "max": 23999
+                },
+                "period": 24000
               },
               {
                 "condition": "minecraft:weather_check",
