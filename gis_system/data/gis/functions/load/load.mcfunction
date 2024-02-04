@@ -112,4 +112,6 @@ gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks false
 gamerule universalAnger true
 
-
+#forceload
+execute in minecraft:tutorial run forceload add -5 0
+execute in overworld run forceload add 225 51
