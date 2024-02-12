@@ -4,11 +4,11 @@
         "item": "minecraft:end_portal_frame"
       },
       "title": {
-        "text": "終焉への門",
+        "text": "終焉への扉",
         "color": "white"
       },
       "description": {
-        "text": "エンドの大門を開く",
+        "text": "エンドの大扉を開く",
         "color": "green"
       },
       "frame": "task",

@@ -11,7 +11,7 @@
       "text": "イスカ地方のスポナーを80%以上壊す",
       "color": "green"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
