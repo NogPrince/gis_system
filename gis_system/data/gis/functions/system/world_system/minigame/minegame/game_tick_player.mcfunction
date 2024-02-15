@@ -27,7 +27,8 @@ execute as @s[scores={gis_mine_skill=2}] if score #minegame gis_timer1 matches 1
 execute as @s[scores={gis_mine_skill=2}] if score #minegame gis_timer1 matches 1200 run playsound minecraft:entity.player.levelup ambient @s[scores={gis_mine_skill=2}] ~ ~ ~ 0.5 2
 execute as @s[scores={gis_mine_skill=2}] if score #minegame gis_timer1 matches 1200 run function gis:system/world_system/minigame/minegame/mine_ore/mine_redstone
 #skill1
-execute as @s[scores={gis_mine_skill=1}] as @e[tag=gis_mine_see] at @s run function gis:system/world_system/minigame/minegame/skill1
+execute as @s[scores={gis_mine_skill=1}] if predicate gis:system/entity_check/is_sneak unless entity @e[tag=gis_mine_see] at @s run function gis:system/world_system/minigame/minegame/skill1_activate
+execute as @s[scores={gis_mine_skill=1}] unless predicate gis:system/entity_check/is_sneak as @e[tag=gis_mine_see] at @s run function gis:system/world_system/minigame/minegame/skill1_deactivate
 
 #effect
 effect give @s[scores={gis_mine_redstone=1..}] minecraft:haste 5 20
