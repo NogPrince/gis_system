@@ -47,10 +47,10 @@ scoreboard objectives add gis_mine_diamond minecraft.mined:diamond_ore "mined di
 
 scoreboard players set #give_score gis_mine_stone 10
 scoreboard players set #give_score gis_mine_coal 500
-scoreboard players set #give_score gis_mine_iron 1000
+scoreboard players set #give_score gis_mine_iron 1500
 scoreboard players set #give_score gis_mine_gold 5000
 scoreboard players set #give_score gis_mine_redstone 300
-scoreboard players set #give_score gis_mine_lapis 500
+scoreboard players set #give_score gis_mine_lapis 1000
 scoreboard players set #give_score gis_mine_diamond 10000
 
 scoreboard objectives add gis_mine_skill dummy "minegame skill type"
