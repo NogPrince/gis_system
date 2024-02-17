@@ -61,6 +61,6 @@ item modify block 2 15 -23 container.25 gis:patch/034e_minegame_book
 item modify block 2 15 -23 container.26 gis:patch/034e_minegame_book
 
 #豚スポナー卵
-function gis:system/entity_system/summon_entity/villager/hotel_villagers
+#function gis:system/entity_system/summon_entity/villager/hotel_villagers
 
 scoreboard players set #034e_patch gis_event_flag 1
