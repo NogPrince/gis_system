@@ -9,6 +9,15 @@
       "#minecraft:candles",
       "#minecraft:fire",
       "#minecraft:rails",
+      "#crops",
+      "#doors",
+      "#wool_carpets",
+      "#saplings",
+      "#trapdoors",
+      "water",
+      "ladder",
+      "tall_grass",
+      "grass",
       "minecraft:torch",
       "minecraft:wall_torch",
       "minecraft:redstone_torch",
@@ -17,6 +26,6 @@
       "minecraft:soul_wall_torch",
       "air",
       "cave_air",
-      "void_air"      
+      "void_air"
   ]
 }
