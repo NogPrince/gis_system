@@ -1,5 +1,6 @@
 execute run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run tp @s ~ 17 ~
 execute run execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run kill @s
+execute as @e[type=area_effect_cloud] at @s if predicate gis:system/position_check/in_boss_n run kill @s
 execute in minecraft:gis_nether run schedule clear gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill_s
 execute in minecraft:gis_nether run schedule clear gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill1_sub
 execute in minecraft:gis_nether run schedule clear gis:system/entity_system/entity_skill/boss/boss_n/boss_n_skill2_sub

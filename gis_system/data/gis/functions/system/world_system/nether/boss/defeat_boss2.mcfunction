@@ -1,6 +1,7 @@
 #ボス2に勝利
 execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run tp @s ~ 17 ~
 execute as @e[tag=gis_mob] at @s if predicate gis:system/position_check/in_boss_n run kill @s
+execute as @e[type=area_effect_cloud] at @s if predicate gis:system/position_check/in_boss_n run kill @s
 execute in minecraft:gis_nether run fill 186 22 -18 153 22 15 minecraft:air replace fire
 execute in minecraft:gis_nether run fill 186 22 -18 153 22 15 minecraft:air replace lava
 execute in minecraft:gis_nether run fill 186 22 -18 153 30 15 minecraft:air replace magma_block
