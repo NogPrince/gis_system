@@ -1,4 +1,5 @@
 execute store result score @s gis_instant1 run data get entity @s Inventory.[{Slot:-106b}].tag.itemkeeper
+scoreboard players set @s gis_instant2 0
 execute if score @s gis_instant1 matches 1 store success score @s gis_instant2 run data get entity @s SelectedItem
 
 execute if score @s gis_instant2 matches 1.. as @s[nbt={SelectedItem:{id:"minecraft:shulker_box"}}] run scoreboard players set @s gis_instant2 -1
