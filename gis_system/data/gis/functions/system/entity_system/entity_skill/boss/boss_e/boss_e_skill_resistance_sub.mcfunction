@@ -3,3 +3,4 @@ execute as 0000006e-0000-0000-0000-000a00000001 at @s run data merge entity @s {
 execute as 0000006e-0000-0000-0000-000a00000001 at @s run playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0
 execute as 0000006e-0000-0000-0000-000300000000 run effect clear @s minecraft:resistance
 execute as 0000006e-0000-0000-0000-000300000000 run effect give @s minecraft:resistance 1000 3 true
+kill 0000006e-0000-0000-0000-000a00000003
