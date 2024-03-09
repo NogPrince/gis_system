@@ -9,7 +9,7 @@ scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/111
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/12121=true}] gis_instant1 5
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/111112=true}] gis_instant1 5
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/121111=true}] gis_instant1 5
-scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/111111=true}] gis_instant1 5
+scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/1111111=true}] gis_instant1 5
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/1112111=true}] gis_instant1 5
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/1211121=true}] gis_instant1 5
 scoreboard players add @s[advancements={gis:gameplay/growtree_ability_attack/1212111=true}] gis_instant1 5

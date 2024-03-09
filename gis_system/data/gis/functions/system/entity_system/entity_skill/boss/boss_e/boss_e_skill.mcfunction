@@ -16,7 +16,7 @@ execute as 0000006e-0000-0000-0000-000a00000001 at @s run ride @s mount 0000006e
 execute as 0000006e-0000-0000-0000-000a00000002 at @s run ride @s mount 0000006e-0000-0000-0000-000300000000
 #execute as 0000006e-0000-0000-0000-000a00000001 at @s run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,-1f],scale:[0.1f,0.1f,1f]}}
 execute as 0000006e-0000-0000-0000-000a00000001 at @s run data merge entity @s {start_interpolation:-1,interpolation_duration:20,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,-1f],scale:[5f,5f,1f]}}
-schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_resistance_sub 45t append
+schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill_resistance_sub 50t append
 scoreboard players operation #end_boss gis_instant2 = #end_boss gis_instant1
 
 scoreboard players operation #end_boss gis_instant1 = #rand gis_instant1

@@ -1,5 +1,6 @@
 execute in minecraft:end_boss positioned 0 63 0 rotated 0 0 run summon minecraft:armor_stand ~ ~ ~ {PortalCooldown:200,UUID:[I;110,0,3,7],Marker:1b,Invisible:1b,Tags:["gis_mob","gis_kill","gis_boss_e_7"],CustomName:'{"text":"龍ノ凶焔"}'}
 schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill7_sub 7t append
+schedule function gis:system/entity_system/entity_skill/boss/boss_e/boss_e_skill7_sub2 25t append
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~ 1 0
 execute as @a at @s if predicate gis:system/position_check/in_boss_e run tellraw @s {"text":"降リ墜チヨ……龍ノ凶焔"}
 
