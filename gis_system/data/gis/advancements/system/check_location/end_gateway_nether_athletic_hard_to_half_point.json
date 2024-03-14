@@ -12,8 +12,8 @@
               "location": { 
                 "position": {
                   "x": {
-                    "min": -65,
-                    "max": -55
+                    "min": -66,
+                    "max": -54
                   },
                   "y": {
                     "min": 31,
@@ -21,7 +21,7 @@
                   },
                   "z": {
                     "min": 91,
-                    "max": 91
+                    "max": 92
                   }
                 },
                 "dimension": "minecraft:gis_nether",
