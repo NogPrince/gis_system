@@ -2,13 +2,15 @@ scoreboard players set @s gis_instant1 0
 scoreboard players set @s gis_instant2 0
 execute if data storage minecraft:gis.adv19 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv19
 scoreboard players operation @s gis_instant2 += @s gis_instant1
-execute if data storage minecraft:gis.adv26 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv26
-scoreboard players operation @s gis_instant2 += @s gis_instant1
+#execute if data storage minecraft:gis.adv26 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv26
+#scoreboard players operation @s gis_instant2 += @s gis_instant1
 execute if data storage minecraft:gis.adv27 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv27
 scoreboard players operation @s gis_instant2 += @s gis_instant1
 execute if data storage minecraft:gis.adv28 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv28
 scoreboard players operation @s gis_instant2 += @s gis_instant1
 execute if data storage minecraft:gis.adv31 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv31
+scoreboard players operation @s gis_instant2 += @s gis_instant1
+execute if data storage minecraft:gis.adv32 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv32
 scoreboard players operation @s gis_instant2 += @s gis_instant1
 execute if data storage minecraft:gis.adv35 {t:1} store success score @s gis_instant1 run advancement grant @s only gis:gameplay/_main/adv35
 scoreboard players operation @s gis_instant2 += @s gis_instant1

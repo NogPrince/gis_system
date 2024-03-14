@@ -42,6 +42,7 @@ data remove storage minecraft:gis.adv26 t
 data remove storage minecraft:gis.adv27 t
 data remove storage minecraft:gis.adv28 t
 data remove storage minecraft:gis.adv31 t
+data remove storage minecraft:gis.adv32 t
 data remove storage minecraft:gis.adv35 t
 data remove storage minecraft:gis.adv36 t
 data remove storage minecraft:gis.adv37 t
@@ -50,7 +51,7 @@ data remove storage minecraft:gis.adv37 t
 advancement revoke @a everything
 
 
-execute in end_boss run fill 4 66 -4 -4 62 4 air
+#execute in end_boss run fill 4 66 -4 -4 62 4 air
 
 #summon interaction 0.0 10.0 -4.0 {width:2f,height:0.885f,response:1b,Tags:["tree_reset_interaction"]}
 
