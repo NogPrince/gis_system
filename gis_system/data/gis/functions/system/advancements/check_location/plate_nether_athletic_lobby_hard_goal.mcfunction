@@ -7,3 +7,4 @@ execute in minecraft:gis_nether run setblock 6 38 123 minecraft:air
 execute in minecraft:gis_nether run clone 4 49 80 4 49 80 6 38 123
 execute in minecraft:gis_nether if block 6 39 125 minecraft:dead_brain_coral_block run clone 6 49 80 6 49 80 6 39 125 replace force
 advancement revoke @s only gis:system/check_location/plate_nether_athletic_lobby_hard
+advancement revoke @s only gis:system/check_location/nether_athletic_hard_reach_half_point

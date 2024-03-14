@@ -1,0 +1,43 @@
+{
+  "parent": "gis:system/check_location/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": { 
+                "position": {
+                  "x": {
+                    "min": -65,
+                    "max": -55
+                  },
+                  "y": {
+                    "min": 31,
+                    "max": 32
+                  },
+                  "z": {
+                    "min": 91,
+                    "max": 91
+                  }
+                },
+                "dimension": "minecraft:gis_nether",
+                "block": {
+                  "blocks": [
+                    "minecraft:end_gateway"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "gis:system/world_system/nether/athletic/hard_tp_to_half_point"
+  }
+}
