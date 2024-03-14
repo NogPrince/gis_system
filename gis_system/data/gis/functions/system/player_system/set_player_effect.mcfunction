@@ -25,11 +25,11 @@ execute as @s[advancements={gis:gameplay/growtree_ability_special/_11=true}] run
 execute as @s[advancements={gis:gameplay/growtree_ability_special/_11=true}] run scoreboard players operation @s gis_instant1 -= @s gis_player_health
 execute at @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/_11=true}] run particle dust 1.000 0.431 0.051 0.5 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal
 execute as @s[scores={gis_instant1=..-1},advancements={gis:gameplay/growtree_ability_special/_11=true}] run attribute @s minecraft:generic.attack_damage modifier remove 0110-0001-0000-0000-1
-execute as @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/_11=true}] run attribute @s minecraft:generic.attack_damage modifier add 0110-0001-0000-0000-1 barserk 1.5 multiply
+execute as @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/_11=true}] run attribute @s minecraft:generic.attack_damage modifier add 0110-0001-0000-0000-1 barserk 0.5 multiply
 execute as @s[advancements={gis:gameplay/growtree_ability_special/_11=true}] run scoreboard players operation @s gis_instant1 -= @s gis_player_health
 execute as @s[advancements={gis:gameplay/growtree_ability_special/_11=true}] run scoreboard players operation @s gis_instant1 -= @s gis_player_health
 execute as @s[scores={gis_instant1=..-1},advancements={gis:gameplay/growtree_ability_special/111=true}] run attribute @s minecraft:generic.attack_damage modifier remove 0110-0001-0000-0000-2
-execute as @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/111=true}] run attribute @s minecraft:generic.attack_damage modifier add 0110-0001-0000-0000-2 barserk2 1.34 multiply
+execute as @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/111=true}] run attribute @s minecraft:generic.attack_damage modifier add 0110-0001-0000-0000-2 barserk2 0.34 multiply
 execute at @s[scores={gis_instant1=0..},advancements={gis:gameplay/growtree_ability_special/111=true}] run particle dust 0.639 0.000 0.000 0.5 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal
 effect give @s[advancements={gis:gameplay/growtree_ability_special/161=true},scores={gis_player_health=..4}] minecraft:invisibility 15 0 true
 effect give @s[scores={gis_use_totem=1..},advancements={gis:gameplay/growtree_ability_special/171=true}] minecraft:resistance 5 4 true

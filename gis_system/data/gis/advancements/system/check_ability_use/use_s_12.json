@@ -12,7 +12,8 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "gis:gameplay/growtree_ability_special/_12": true
+                  "gis:gameplay/growtree_ability_special/_12": true,
+                  "gis:gameplay/growtree_ability_special/121": false
                 }
               }
             }
