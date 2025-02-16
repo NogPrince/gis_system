@@ -9,4 +9,8 @@ execute if score #spawner gis_stats matches 130.. if score #spawner gis_event_fl
 execute if score #spawner gis_stats matches 260.. if score #spawner gis_event_flag matches 2 run function gis:system/entity_system/summon_entity/villager/spawner50
 execute if score #spawner gis_stats matches 415.. if score #spawner gis_event_flag matches 3 run function gis:system/entity_system/summon_entity/villager/spawner80
 
+
+execute at @s run playsound minecraft:block.glass.break hostile @a[distance=..10] ~ ~ ~ 0.6 1.5
+
+
 kill @s
